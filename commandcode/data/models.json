@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T07:32:17.364Z",
+  "generated_at": "2026-10-10T07:34:45.135Z",
   "source": "https://api.commandcode.ai/provider/v1/models",
   "catalog": "https://commandcode.ai/models",
   "total_models": 87,
@@ -12,7 +12,7 @@
       "note": "Stealth preview — free while the preview lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
       "context_length": 256000,
-      "created": 1791617537,
+      "created": 1791617685,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -30,7 +30,7 @@
       "note": "Free while capacity lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#laguna-s-2.1-free",
       "context_length": 256000,
-      "created": 1791617537,
+      "created": 1791617685,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -48,7 +48,7 @@
       "note": "Free while it lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#ling-3.0-flash-sante-free",
       "context_length": 262144,
-      "created": 1791617537,
+      "created": 1791617685,
       "endpoints": [
         "/chat/completions"
       ],
@@ -64,7 +64,7 @@
       "note": "Free while it lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#ling-3.1-flash-free",
       "context_length": 262144,
-      "created": 1791617537,
+      "created": 1791617685,
       "endpoints": [
         "/chat/completions"
       ],
