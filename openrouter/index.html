@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free OpenRouter Models — the openrouter/free pool</title>
+<meta name="description" content="A living list of every free (zero-cost) model available on OpenRouter — the models served by the openrouter/free router." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff2d2d'/%3E%3Cstop offset='1' stop-color='%23ffb020'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='13' fill='url(%23g)'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<div class="orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">openrouter<span>/</span>free</p>
+    <h1 class="title">Free models,<br /><span class="grad">zero cost.</span></h1>
+    <p class="lede">
+      Every model you can call for nothing on OpenRouter — the pool the
+      <code>openrouter/free</code> router draws from, plus the router itself.
+      Pulled live from the OpenRouter API.
+    </p>
+    <div class="stats" id="stats" aria-live="polite"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls">
+    <div class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search models, providers, ids…" autocomplete="off" aria-label="Search models" />
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by modality"></div>
+    <div class="sort">
+      <label for="sort">Sort</label>
+      <select id="sort">
+        <option value="name">Name A–Z</option>
+        <option value="context">Largest context</option>
+        <option value="newest">Newest</option>
+        <option value="provider">Provider A–Z</option>
+      </select>
+    </div>
+  </section>
+
+  <div class="resultbar"><span id="count"></span></div>
+  <section id="grid" class="grid" aria-live="polite"></section>
+  <p id="empty" class="empty" hidden>No models match your filters.</p>
+
+  <footer class="foot">
+    <p>
+      <strong>Cost figures are $0 in / $0 out</strong> for every model listed. Free
+      tiers can be rate-limited and withdrawn — check the model page before you rely on it.
+    </p>
+    <p class="muted">Data source: <a href="https://openrouter.ai/api/v1/models" target="_blank" rel="noopener">OpenRouter API</a> · <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener">browse on OpenRouter</a></p>
+  </footer>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-10-10T07:30:52.738Z",
+  "source": "https://inference-api.nousresearch.com/v1/models",
+  "portal": "https://portal.nousresearch.com",
+  "total_models": 421,
+  "count": 10,
+  "models": [
+    {
+      "id": "inclusionai/ling-3.0-flash-fin:free",
+      "name": "inclusionAI: Ling 3.0 Flash Fin",
+      "provider": "inclusionAI",
+      "model": "Ling 3.0 Flash Fin",
+      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1787846290,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 15,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
+      "provider": "inclusionAI",
+      "model": "Ling 3.0 Flash Sante",
+      "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1788545946,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 15,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash",
+      "provider": "inclusionAI",
+      "model": "Ling 3.1 Flash",
+      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1790950024,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "inclusionai/ling-3.1-flash-20261002",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 15,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "meituan/longcat-2.0:free",
+      "name": "Meituan: LongCat 2.0",
+      "provider": "Meituan",
+      "model": "LongCat 2.0",
+      "description": "LongCat 2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total. It is suited for coding, repository-level changes, long-horizon problem solving, and agentic...",
+      "context_length": 1048756,
+      "max_completion_tokens": 262144,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1784554658,
+      "expiration_date": null,
+      "hugging_face_id": "meituan-longcat/LongCat-2.0",
+      "canonical_slug": "meituan/longcat-2.0-20260720",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 15,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "meituan/longcat-2.5-preview:free",
+      "name": "Meituan: LongCat 2.5 Preview",
+      "provider": "Meituan",
+      "model": "LongCat 2.5 Preview",
+      "description": "Meituan's LongCat 2.5 Preview. 1M context, image input, reasoning on by default. Free.",
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1790294400,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "meituan/longcat-2.5-preview:free",
+      "reasoning": false,
+      "tool_call": true,
+      "supported_parameters": 12,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1",
+      "provider": "Poolside",
+      "model": "Laguna S 2.1",
+      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
+      "context_length": 262144,
+      "max_completion_tokens": 131072,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1784652683,
+      "expiration_date": "2026-10-31",
+      "hugging_face_id": "poolside/Laguna-S-2.1",
+      "canonical_slug": "poolside/laguna-s-2.1-20260720",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 6,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "name": "Poolside: Laguna XS 2.1",
+      "provider": "Poolside",
+      "model": "Laguna XS 2.1",
+      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1783002429,
+      "expiration_date": "2026-10-31",
+      "hugging_face_id": "poolside/Laguna-XS-2.1",
+      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 6,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "stepfun/step-3.7-flash:free",
+      "name": "StepFun: Step 3.7 Flash",
+      "provider": "StepFun",
+      "model": "Step 3.7 Flash",
+      "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters...",
+      "context_length": 262144,
+      "max_completion_tokens": 256000,
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1779985069,
+      "expiration_date": null,
+      "hugging_face_id": "stepfun-ai/Step-3.7-Flash",
+      "canonical_slug": "stepfun/step-3.7-flash-20260528",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 18,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "stepfun/step-5-preview:free",
+      "name": "StepFun: Step 5 Preview",
+      "provider": "StepFun",
+      "model": "Step 5 Preview",
+      "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
+      "context_length": 1000000,
+      "max_completion_tokens": 64000,
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1791462849,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "stepfun/step-5-preview-20261008",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 13,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "upstage/solar-mini4:free",
+      "name": "Upstage: Solar Mini 4",
+      "provider": "Upstage",
+      "model": "Solar Mini 4",
+      "description": "Solar Mini 4 is Upstage's compact, cost-efficient language model, a 35B-parameter mixture-of-experts with 3B active parameters and a 524K context window. It is built for agentic use cases where response...",
+      "context_length": 524288,
+      "max_completion_tokens": 131072,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1790160358,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "upstage/solar-mini4-20260922",
+      "reasoning": false,
+      "tool_call": true,
+      "supported_parameters": 13,
+      "url": "https://portal.nousresearch.com"
+    }
+  ]
+}

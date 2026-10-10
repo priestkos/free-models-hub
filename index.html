@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free Models Hub — four catalogs, zero cost</title>
+<meta name="description" content="One hub for four free-model catalogs: OpenRouter, OpenCode, Nous Portal and Command Code. Every model priced $0, refreshed daily." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff2d2d'/%3E%3Cstop offset='1' stop-color='%23ffb020'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='13' fill='url(%23g)'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/hub.css" />
+</head>
+<body>
+<div class="orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">free models<span>/</span>hub</p>
+    <h1 class="title">Four catalogs,<br /><span class="grad">zero cost.</span></h1>
+    <p class="lede">
+      Every model you can call for free across four providers, gathered in one place —
+      <strong>OpenRouter</strong>, <strong>OpenCode</strong>, the <strong>Nous Portal</strong> and
+      <strong>Command Code</strong>. Each catalog is rebuilt from its provider's live API every day.
+    </p>
+    <div class="stats" id="stats" aria-live="polite">
+      <div class="stat"><b class="ember" data-total>–</b><span>free models</span></div>
+      <div class="stat"><b>4</b><span>catalogs</span></div>
+      <div class="stat"><b data-updated>–</b><span>refreshed</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="resultbar"><span id="count">Loading live counts…</span></div>
+
+  <section class="hub" id="hub">
+    <article class="card site-card" data-site="openrouter">
+      <div class="card__top">
+        <span class="provider">OpenRouter</span>
+        <span class="free">free</span>
+      </div>
+      <div class="num">01</div>
+      <h2>Free models on OpenRouter</h2>
+      <p class="desc">The zero-cost pool the <code>openrouter/free</code> router draws from, plus the router itself.</p>
+      <div class="hub-count"><b data-count>–</b><span>free models</span></div>
+      <div class="meta" data-preview></div>
+      <div class="card__actions">
+        <a href="openrouter/">Open catalog <span class="arw">↗</span></a>
+        <a class="ghost" href="https://priestkos.github.io/openrouter-free-models/" target="_blank" rel="noopener">Standalone <span class="arw">↗</span></a>
+      </div>
+    </article>
+
+    <article class="card site-card" data-site="opencode">
+      <div class="card__top">
+        <span class="provider">OpenCode</span>
+        <span class="free">free</span>
+      </div>
+      <div class="num">02</div>
+      <h2>Free models on OpenCode</h2>
+      <p class="desc">Free models across the <strong>OpenCode Zen</strong> gateway and the <strong>OpenCode Go</strong> tier.</p>
+      <div class="hub-count"><b data-count>–</b><span>free models</span></div>
+      <div class="meta" data-preview></div>
+      <div class="card__actions">
+        <a href="opencode/">Open catalog <span class="arw">↗</span></a>
+        <a class="ghost" href="https://priestkos.github.io/opencode-free-models/" target="_blank" rel="noopener">Standalone <span class="arw">↗</span></a>
+      </div>
+    </article>
+
+    <article class="card site-card" data-site="nous-portal">
+      <div class="card__top">
+        <span class="provider">Nous Portal</span>
+        <span class="free">free</span>
+      </div>
+      <div class="num">03</div>
+      <h2>Free models on the Nous Portal</h2>
+      <p class="desc">Everything the Portal's inference API serves at <strong>$0 in / $0 out</strong>.</p>
+      <div class="hub-count"><b data-count>–</b><span>free models</span></div>
+      <div class="meta" data-preview></div>
+      <div class="card__actions">
+        <a href="nous-portal/">Open catalog <span class="arw">↗</span></a>
+        <a class="ghost" href="https://priestkos.github.io/nous-portal-free-models/" target="_blank" rel="noopener">Standalone <span class="arw">↗</span></a>
+      </div>
+    </article>
+
+    <article class="card site-card" data-site="commandcode">
+      <div class="card__top">
+        <span class="provider">Command Code</span>
+        <span class="free">free</span>
+      </div>
+      <div class="num">04</div>
+      <h2>Free models on Command Code</h2>
+      <p class="desc">The free deals on Command Code's Provider API — billed $0 per request while they last.</p>
+      <div class="hub-count"><b data-count>–</b><span>free models</span></div>
+      <div class="meta" data-preview></div>
+      <div class="card__actions">
+        <a href="commandcode/">Open catalog <span class="arw">↗</span></a>
+        <a class="ghost" href="https://priestkos.github.io/commandcode-free-models/" target="_blank" rel="noopener">Standalone <span class="arw">↗</span></a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="foot">
+    <p>
+      <strong>Every catalog is refreshed once a day</strong> by a GitHub Actions job that pulls each
+      provider's live model list and commits the result back to this repository. Free tiers are
+      promotional — always check the provider before you depend on one.
+    </p>
+    <p class="muted">
+      Repo: <a href="https://github.com/priestkos/free-models-hub" target="_blank" rel="noopener">priestkos/free-models-hub</a>
+      · The four standalone sites remain published separately.
+    </p>
+  </footer>
+</main>
+
+<script src="assets/hub.js"></script>
+</body>
+</html>

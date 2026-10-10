@@ -1,0 +1,463 @@
+{
+  "generated_at": "2026-10-10T07:30:50.422Z",
+  "source": "https://openrouter.ai/api/v1/models",
+  "total_models": 458,
+  "count": 19,
+  "models": [
+    {
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "provider": "Apodex",
+      "model": "Apodex 1.1 Mini (free)",
+      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1790875335,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "supported_parameters": 15,
+      "is_router": false,
+      "url": "https://openrouter.ai/apodex/apodex-1.1-mini:free"
+    },
+    {
+      "id": "cohere/north-mini-code:free",
+      "name": "Cohere: North Mini Code (free)",
+      "provider": "Cohere",
+      "model": "North Mini Code (free)",
+      "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
+      "context_length": 256000,
+      "max_completion_tokens": 64000,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1781723748,
+      "expiration_date": null,
+      "hugging_face_id": "CohereLabs/North-Mini-Code-1.0",
+      "supported_parameters": 12,
+      "is_router": false,
+      "url": "https://openrouter.ai/cohere/north-mini-code:free"
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "provider": "Dots Studio",
+      "model": "Dots3-Note Preview (free)",
+      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+      "context_length": 512000,
+      "max_completion_tokens": 460800,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1786680361,
+      "expiration_date": "2026-12-31",
+      "hugging_face_id": null,
+      "supported_parameters": 9,
+      "is_router": false,
+      "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free"
+    },
+    {
+      "id": "openrouter/free",
+      "name": "Free Models Router",
+      "provider": "openrouter",
+      "model": "Free Models Router",
+      "description": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that...",
+      "context_length": 200000,
+      "max_completion_tokens": null,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1769917427,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "supported_parameters": 20,
+      "is_router": true,
+      "url": "https://openrouter.ai/openrouter/free"
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "name": "Google: Gemma 4 26B A4B  (free)",
+      "provider": "Google",
+      "model": "Gemma 4 26B A4B  (free)",
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1775227989,
+      "expiration_date": null,
+      "hugging_face_id": "google/gemma-4-26B-A4B-it",
+      "supported_parameters": 9,
+      "is_router": false,
+      "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free"
+    },
+    {
+      "id": "google/gemma-4-31b-it:free",
+      "name": "Google: Gemma 4 31B (free)",
+      "provider": "Google",
+      "model": "Gemma 4 31B (free)",
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1775148486,
+      "expiration_date": null,
+      "hugging_face_id": "google/gemma-4-31B-it",
+      "supported_parameters": 9,
+      "is_router": false,
+      "url": "https://openrouter.ai/google/gemma-4-31b-it:free"
+    },
+    {
+      "id": "google/lyria-3-clip-preview",
+      "name": "Google: Lyria 3 Clip Preview",
+      "provider": "Google",
+      "model": "Lyria 3 Clip Preview",
+      "description": "30 second duration clips are priced at $0.04 per clip. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate...",
+      "context_length": 1048576,
+      "max_completion_tokens": 65536,
+      "modality": "text+image->text+audio",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text",
+        "audio"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1774907255,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "supported_parameters": 5,
+      "is_router": false,
+      "url": "https://openrouter.ai/google/lyria-3-clip-preview"
+    },
+    {
+      "id": "google/lyria-3-pro-preview",
+      "name": "Google: Lyria 3 Pro Preview",
+      "provider": "Google",
+      "model": "Lyria 3 Pro Preview",
+      "description": "Full-length songs are priced at $0.08 per song. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate high-quality, 48kHz...",
+      "context_length": 1048576,
+      "max_completion_tokens": 65536,
+      "modality": "text+image->text+audio",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text",
+        "audio"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1774907286,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "supported_parameters": 5,
+      "is_router": false,
+      "url": "https://openrouter.ai/google/lyria-3-pro-preview"
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash",
+      "provider": "inclusionAI",
+      "model": "Ling 3.1 Flash",
+      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1790950024,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "supported_parameters": 15,
+      "is_router": false,
+      "url": "https://openrouter.ai/inclusionai/ling-3.1-flash"
+    },
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "name": "LiquidAI: LFM2.5-2.6B (free)",
+      "provider": "LiquidAI",
+      "model": "LFM2.5-2.6B (free)",
+      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
+      "context_length": 65536,
+      "max_completion_tokens": 8192,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1786470519,
+      "expiration_date": null,
+      "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
+      "supported_parameters": 19,
+      "is_router": false,
+      "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free"
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+      "provider": "NVIDIA",
+      "model": "Nemotron 3 Nano Omni (free)",
+      "description": "NVIDIA Nemotron™ 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
+      "context_length": 256000,
+      "max_completion_tokens": 65536,
+      "modality": "text+image+audio+video->text",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1777393095,
+      "expiration_date": null,
+      "hugging_face_id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "supported_parameters": 8,
+      "is_router": false,
+      "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "NVIDIA: Nemotron 3 Super (free)",
+      "provider": "NVIDIA",
+      "model": "Nemotron 3 Super (free)",
+      "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1773245239,
+      "expiration_date": null,
+      "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+      "supported_parameters": 11,
+      "is_router": false,
+      "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free"
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "name": "NVIDIA: Nemotron 3 Ultra (free)",
+      "provider": "NVIDIA",
+      "model": "Nemotron 3 Ultra (free)",
+      "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
+      "context_length": 1000000,
+      "max_completion_tokens": 65536,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1780551208,
+      "expiration_date": null,
+      "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "supported_parameters": 9,
+      "is_router": false,
+      "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-content-safety:free",
+      "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+      "provider": "NVIDIA",
+      "model": "Nemotron 3.5 Content Safety (free)",
+      "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
+      "context_length": 128000,
+      "max_completion_tokens": 8192,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1780581864,
+      "expiration_date": null,
+      "hugging_face_id": "nvidia/Nemotron-3.5-Content-Safety",
+      "supported_parameters": 6,
+      "is_router": false,
+      "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning:free",
+      "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "provider": "NVIDIA",
+      "model": "Nemotron 3.5 Lightning (free)",
+      "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
+      "context_length": 1000000,
+      "max_completion_tokens": 65536,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1786452751,
+      "expiration_date": null,
+      "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "supported_parameters": 8,
+      "is_router": false,
+      "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free"
+    },
+    {
+      "id": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "provider": "Poolside",
+      "model": "Laguna S 2.1 (free)",
+      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1784652683,
+      "expiration_date": "2026-10-31",
+      "hugging_face_id": "poolside/Laguna-S-2.1",
+      "supported_parameters": 6,
+      "is_router": false,
+      "url": "https://openrouter.ai/poolside/laguna-s-2.1:free"
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "provider": "Poolside",
+      "model": "Laguna XS 2.1 (free)",
+      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1783002429,
+      "expiration_date": "2026-10-31",
+      "hugging_face_id": "poolside/Laguna-XS-2.1",
+      "supported_parameters": 6,
+      "is_router": false,
+      "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free"
+    },
+    {
+      "id": "thinkingmachines/inkling:free",
+      "name": "Thinking Machines: Inkling (free)",
+      "provider": "Thinking Machines",
+      "model": "Inkling (free)",
+      "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
+      "context_length": 1048576,
+      "max_completion_tokens": 262144,
+      "modality": "text+image+audio->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1784325956,
+      "expiration_date": null,
+      "hugging_face_id": "thinkingmachines/Inkling",
+      "supported_parameters": 11,
+      "is_router": false,
+      "url": "https://openrouter.ai/thinkingmachines/inkling:free"
+    },
+    {
+      "id": "thinkingmachines/inkling-small:free",
+      "name": "Thinking Machines: Inkling Small (free)",
+      "provider": "Thinking Machines",
+      "model": "Inkling Small (free)",
+      "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of...",
+      "context_length": 1048576,
+      "max_completion_tokens": 262144,
+      "modality": "text+image+audio->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1785443117,
+      "expiration_date": null,
+      "hugging_face_id": "thinkingmachines/Inkling-Small",
+      "supported_parameters": 11,
+      "is_router": false,
+      "url": "https://openrouter.ai/thinkingmachines/inkling-small:free"
+    }
+  ]
+}

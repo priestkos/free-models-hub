@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-10-10T07:30:53.796Z",
+  "source": "https://api.commandcode.ai/provider/v1/models",
+  "catalog": "https://commandcode.ai/models",
+  "total_models": 87,
+  "count": 4,
+  "models": [
+    {
+      "id": "stealth/glyph-cluster:free",
+      "name": "Glyph Cluster",
+      "provider": "Command Code",
+      "note": "Stealth preview — free while the preview lasts.",
+      "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
+      "context_length": 256000,
+      "created": 1791617453,
+      "endpoints": [
+        "/chat/completions",
+        "/responses"
+      ],
+      "endpoint_labels": [
+        "Chat Completions",
+        "Responses"
+      ],
+      "url": "https://commandcode.ai/models"
+    },
+    {
+      "id": "poolside/laguna-s-2.1-free",
+      "name": "Laguna S 2.1",
+      "provider": "Command Code",
+      "note": "Free while capacity lasts.",
+      "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#laguna-s-2.1-free",
+      "context_length": 256000,
+      "created": 1791617453,
+      "endpoints": [
+        "/chat/completions",
+        "/responses"
+      ],
+      "endpoint_labels": [
+        "Chat Completions",
+        "Responses"
+      ],
+      "url": "https://commandcode.ai/models"
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "name": "Ling 3.0 Flash Sante",
+      "provider": "Command Code",
+      "note": "Free while it lasts.",
+      "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#ling-3.0-flash-sante-free",
+      "context_length": 262144,
+      "created": 1791617453,
+      "endpoints": [
+        "/chat/completions"
+      ],
+      "endpoint_labels": [
+        "Chat Completions"
+      ],
+      "url": "https://commandcode.ai/models"
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash:free",
+      "name": "Ling 3.1 Flash",
+      "provider": "Command Code",
+      "note": "Free while it lasts.",
+      "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#ling-3.1-flash-free",
+      "context_length": 262144,
+      "created": 1791617453,
+      "endpoints": [
+        "/chat/completions"
+      ],
+      "endpoint_labels": [
+        "Chat Completions"
+      ],
+      "url": "https://commandcode.ai/models"
+    }
+  ]
+}

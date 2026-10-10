@@ -1,0 +1,86 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Daily refresh of all four catalogs, run entirely on GitHub-hosted runners
+  # (no local scheduler).
+  schedule:
+    - cron: "0 6 * * *"
+  # On-demand trigger: Actions tab -> "Run workflow", or
+  # gh workflow run "Deploy to GitHub Pages"
+  workflow_dispatch:
+
+permissions:
+  # contents: write — the daily job commits the refreshed data back to the repo.
+  # That commit is also repository activity, so GitHub does not auto-disable the
+  # scheduled trigger after 60 days.
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh all four catalogs
+        run: |
+          node openrouter/scripts/fetch-models.mjs
+          node opencode/scripts/fetch-models.mjs
+          node nous-portal/scripts/fetch-models.mjs
+          node commandcode/scripts/fetch-models.mjs
+
+      - name: Commit refreshed data
+        run: |
+          if [ -z "$(git status --porcelain -- '*/data/models.json')" ]; then
+            echo "No data changes — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*/data/models.json'
+          git commit -m "chore: refresh all four free-model catalogs [skip ci]"
+          git push origin HEAD:main
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -r assets _site/assets
+          for s in openrouter opencode nous-portal commandcode; do
+            mkdir -p "_site/$s"
+            cp "$s/index.html" "_site/$s/"
+            cp -r "$s/assets" "_site/$s/assets"
+            cp -r "$s/data" "_site/$s/data"
+          done
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
