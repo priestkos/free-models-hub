@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-10T07:34:44.782Z",
+  "generated_at": "2026-10-11T11:56:21.439Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 421,
-  "count": 10,
+  "total_models": 422,
+  "count": 11,
   "models": [
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
@@ -129,6 +129,31 @@
       "reasoning": false,
       "tool_call": true,
       "supported_parameters": 12,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "stealth/missingno",
+      "name": "MissingNo",
+      "provider": "stealth",
+      "model": "MissingNo",
+      "description": "MissingNo is a free reasoning model with a 262K-token context window, tool calling and structured outputs. Text input only. Reasoning is always on; control depth with the `reasoning` parameter (`low` / `medium` / `high` / `xhigh` / `max`).",
+      "context_length": 262144,
+      "max_completion_tokens": 131072,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1791417600,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "stealth/missingno",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 8,
       "url": "https://portal.nousresearch.com"
     },
     {
