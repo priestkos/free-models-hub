@@ -35,12 +35,13 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Refresh all four catalogs
+      - name: Refresh all four catalogs and the Stealth catalog
         run: |
           node openrouter/scripts/fetch-models.mjs
           node opencode/scripts/fetch-models.mjs
           node nous-portal/scripts/fetch-models.mjs
           node commandcode/scripts/fetch-models.mjs
+          node stealth/scripts/fetch-models.mjs
 
       - name: Commit refreshed data
         run: |
@@ -51,7 +52,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- '*/data/models.json'
-          git commit -m "chore: refresh all four free-model catalogs [skip ci]"
+          git commit -m "chore: refresh free-model catalogs and Stealth [skip ci]"
           git push origin HEAD:main
 
       - name: Assemble site
@@ -59,7 +60,7 @@ jobs:
           mkdir -p _site
           cp index.html _site/
           cp -r assets _site/assets
-          for s in openrouter opencode nous-portal commandcode; do
+          for s in openrouter opencode nous-portal commandcode stealth; do
             mkdir -p "_site/$s"
             cp "$s/index.html" "_site/$s/"
             cp -r "$s/assets" "_site/$s/assets"

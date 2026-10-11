@@ -83,4 +83,20 @@ async function init() {
   }
 }
 
+// Stealth banner: count only, read from the Stealth catalog. Kept out of the
+// four-catalog total above because Stealth models are a cross-provider slice.
+async function initStealth() {
+  const el = document.querySelector("[data-stealth-count]");
+  if (!el) return;
+  try {
+    const res = await fetch("stealth/data/models.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status);
+    const d = await res.json();
+    el.textContent = d.count ?? (d.models || []).length;
+  } catch {
+    el.textContent = "—";
+  }
+}
+
 init();
+initStealth();

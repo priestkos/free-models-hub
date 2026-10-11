@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-10-11T16:46:16.078Z",
+  "sources": [
+    "https://openrouter.ai/api/v1/models",
+    "https://opencode.ai/zen/v1/models",
+    "https://opencode.ai/zen/go/v1/models",
+    "https://inference-api.nousresearch.com/v1/models",
+    "https://api.commandcode.ai/provider/v1/models"
+  ],
+  "count": 2,
+  "providers": [
+    {
+      "key": "openrouter",
+      "label": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1/models",
+      "live_count": 458,
+      "count": 0
+    },
+    {
+      "key": "opencode",
+      "label": "OpenCode Zen",
+      "endpoint": "https://opencode.ai/zen/v1/models",
+      "live_count": 87,
+      "count": 0
+    },
+    {
+      "key": "opencode-go",
+      "label": "OpenCode Go",
+      "endpoint": "https://opencode.ai/zen/go/v1/models",
+      "live_count": 45,
+      "count": 0
+    },
+    {
+      "key": "nous-portal",
+      "label": "Nous Portal",
+      "endpoint": "https://inference-api.nousresearch.com/v1/models",
+      "live_count": 422,
+      "count": 1
+    },
+    {
+      "key": "commandcode",
+      "label": "Command Code",
+      "endpoint": "https://api.commandcode.ai/provider/v1/models",
+      "live_count": 87,
+      "count": 1
+    }
+  ],
+  "models": [
+    {
+      "id": "stealth/glyph-cluster:free",
+      "name": "Glyph Cluster",
+      "provider_key": "commandcode",
+      "provider": "Command Code",
+      "description": "",
+      "context_length": 256000,
+      "price": null,
+      "endpoints": [
+        "/chat/completions",
+        "/responses"
+      ],
+      "reasoning": false,
+      "tool_call": false,
+      "url": "https://commandcode.ai/models"
+    },
+    {
+      "id": "stealth/missingno",
+      "name": "MissingNo",
+      "provider_key": "nous-portal",
+      "provider": "Nous Portal",
+      "description": "MissingNo is a free reasoning model with a 262K-token context window, tool calling and structured outputs. Text input only. Reasoning is always on; control depth with the `reasoning` parameter (`low` / `medium` / `high` / `xhigh` / `max`).",
+      "context_length": 262144,
+      "price": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "endpoints": [],
+      "reasoning": true,
+      "tool_call": true,
+      "url": "https://portal.nousresearch.com"
+    }
+  ]
+}

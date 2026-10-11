@@ -1,6 +1,6 @@
 # Free Models Hub
 
-One landing page plus four free-model catalogs, served from a single repository:
+One landing page plus four free-model catalogs and a Stealth catalog, served from a single repository:
 
 | Path | Catalog |
 | --- | --- |
@@ -9,6 +9,7 @@ One landing page plus four free-model catalogs, served from a single repository:
 | `/opencode/` | Free models on OpenCode (Zen + Go) |
 | `/nous-portal/` | Free models on the Nous Portal |
 | `/commandcode/` | Free models on Command Code |
+| `/stealth/` | Every `stealth/` model being served across the four providers, from their live APIs |
 
 **Live:** https://priestkos.github.io/free-models-hub/
 
@@ -19,7 +20,7 @@ site files live in one place instead of five.
 
 | Piece | Role |
 | --- | --- |
-| `index.html`, `assets/hub.css`, `assets/hub.js` | The landing page. Counts are read live from each catalog's `data/models.json`. |
+| `index.html`, `assets/hub.css`, `assets/hub.js` | The landing page. Counts are read live from each catalog's `data/models.json`, including the Stealth banner. |
 | `<site>/index.html`, `<site>/assets/` | Each catalog's page (vanilla HTML/CSS/JS, no build step). |
 | `<site>/scripts/fetch-models.mjs` | Each catalog's own generator — pulls its provider's live API and keeps the free models. No dependencies. |
 | `<site>/data/models.json` | Generated snapshot each catalog page loads. |
@@ -35,7 +36,7 @@ current and keeps the schedule from being auto-disabled after 60 days of inactiv
 ## Local preview
 
 ```bash
-for s in openrouter opencode nous-portal commandcode; do node "$s/scripts/fetch-models.mjs"; done
+for s in openrouter opencode nous-portal commandcode stealth; do node "$s/scripts/fetch-models.mjs"; done
 python -m http.server 8000          # then open http://localhost:8000
 ```
 
