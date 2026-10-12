@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:29:09.055Z",
+  "generated_at": "2026-10-12T14:07:25.624Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 15,
+  "total_free": 12,
   "providers": [
     {
       "key": "opencode",
@@ -15,8 +15,8 @@
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/docs/zen",
       "catalog_size": 120,
-      "live_count": 87,
-      "count": 13,
+      "live_count": 83,
+      "count": 10,
       "models": [
         {
           "id": "big-pickle",
@@ -40,28 +40,6 @@
           "canonical_model_id": null
         },
         {
-          "id": "exo-free",
-          "config_id": "opencode/exo-free",
-          "name": "Exo Free",
-          "description": "Free-tier preview reasoning model with text and image input and tool use",
-          "context": 1048576,
-          "max_output": 131072,
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": false,
-          "release_date": "2026-10-06",
-          "last_updated": "2026-10-06",
-          "canonical_model_id": null
-        },
-        {
           "id": "jev-1.13-free",
           "config_id": "opencode/jev-1.13-free",
           "name": "Jev 1.13 Free",
@@ -77,27 +55,6 @@
           "release_date": null,
           "last_updated": null,
           "canonical_model_id": null
-        },
-        {
-          "id": "ling-3.0-flash-fin-free",
-          "config_id": "opencode/ling-3.0-flash-fin-free",
-          "name": "Ling 3.0 Flash Fin Free",
-          "description": "Finance-enhanced model for financial research, multi-step investment workflows, and long-horizon planning and execution",
-          "context": 262144,
-          "max_output": 32768,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": false,
-          "open_weights": true,
-          "release_date": "2026-08-27",
-          "last_updated": "2026-09-03",
-          "canonical_model_id": "inclusionai/ling-3.0-flash-fin"
         },
         {
           "id": "ling-3.1-flash-free",
@@ -217,27 +174,6 @@
           "canonical_model_id": null
         },
         {
-          "id": "nemotron-3-ultra-free",
-          "config_id": "opencode/nemotron-3-ultra-free",
-          "name": "Nemotron 3 Ultra Free",
-          "description": "Largest Nemotron 3 model for maximum open-weight reasoning and agent accuracy",
-          "context": 1000000,
-          "max_output": 128000,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": false,
-          "open_weights": true,
-          "release_date": "2026-06-04",
-          "last_updated": "2026-06-04",
-          "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b"
-        },
-        {
           "id": "nemotron-3.5-lightning-free",
           "config_id": "opencode/nemotron-3.5-lightning-free",
           "name": "Nemotron 3.5 Lightning Free",
@@ -312,7 +248,7 @@
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/docs/go",
       "catalog_size": 36,
-      "live_count": 45,
+      "live_count": 38,
       "count": 2,
       "models": [
         {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:29:08.549Z",
+  "generated_at": "2026-10-12T14:07:25.202Z",
   "source": "https://openrouter.ai/api/v1/models",
   "total_models": 458,
   "count": 19,
@@ -205,7 +205,7 @@
       "model": "Ling 3.1 Flash",
       "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
       "context_length": 262144,
-      "max_completion_tokens": 32768,
+      "max_completion_tokens": 235929,
       "modality": "text->text",
       "input_modalities": [
         "text"
