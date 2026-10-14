@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T13:19:47.975Z",
+  "generated_at": "2026-10-14T10:59:13.840Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -14,8 +14,8 @@
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 121,
-      "live_count": 84,
+      "catalog_size": 122,
+      "live_count": 86,
       "count": 11,
       "models": [
         {
@@ -268,25 +268,29 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 36,
-      "live_count": 39,
+      "catalog_size": 38,
+      "live_count": 40,
       "count": 3,
       "models": [
         {
           "id": "cat-jam-free",
           "config_id": "opencode-go/cat-jam-free",
           "name": "Cat Jam Free",
-          "description": "",
-          "context": null,
-          "max_output": null,
-          "input_modalities": [],
-          "output_modalities": [],
-          "reasoning": false,
-          "tool_call": false,
+          "description": "A text-only reasoning model for coding and agentic workflows, with tool calling and structured JSON outputs.",
+          "context": 262144,
+          "max_output": 131072,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
           "attachment": false,
           "open_weights": false,
-          "release_date": null,
-          "last_updated": null,
+          "release_date": "2026-10-12",
+          "last_updated": "2026-10-12",
           "canonical_model_id": null
         },
         {

@@ -1,85 +1,10 @@
 {
-  "generated_at": "2026-10-13T13:19:48.290Z",
+  "generated_at": "2026-10-14T10:59:14.069Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
   "total_models": 423,
-  "count": 11,
+  "count": 8,
   "models": [
-    {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "name": "inclusionAI: Ling 3.0 Flash Fin",
-      "provider": "inclusionAI",
-      "model": "Ling 3.0 Flash Fin",
-      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1787846290,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 15,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante",
-      "provider": "inclusionAI",
-      "model": "Ling 3.0 Flash Sante",
-      "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1788545946,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 15,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
-      "id": "inclusionai/ling-3.1-flash",
-      "name": "inclusionAI: Ling 3.1 Flash",
-      "provider": "inclusionAI",
-      "model": "Ling 3.1 Flash",
-      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
-      "context_length": 262144,
-      "max_completion_tokens": 235929,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1790950024,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "inclusionai/ling-3.1-flash-20261002",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 15,
-      "url": "https://portal.nousresearch.com"
-    },
     {
       "id": "meituan/longcat-2.0:free",
       "name": "Meituan: LongCat 2.0",

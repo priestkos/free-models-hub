@@ -1,32 +1,9 @@
 {
-  "generated_at": "2026-10-13T13:19:47.443Z",
+  "generated_at": "2026-10-14T10:59:13.395Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 461,
-  "count": 19,
+  "total_models": 462,
+  "count": 17,
   "models": [
-    {
-      "id": "apodex/apodex-1.1-mini:free",
-      "name": "Apodex: Apodex 1.1 Mini (free)",
-      "provider": "Apodex",
-      "model": "Apodex 1.1 Mini (free)",
-      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
-      "context_length": 262144,
-      "max_completion_tokens": 235929,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1790875335,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "supported_parameters": 15,
-      "is_router": false,
-      "url": "https://openrouter.ai/apodex/apodex-1.1-mini:free"
-    },
     {
       "id": "cohere/north-mini-code:free",
       "name": "Cohere: North Mini Code (free)",
@@ -199,29 +176,6 @@
       "url": "https://openrouter.ai/google/lyria-3-pro-preview"
     },
     {
-      "id": "inclusionai/ling-3.1-flash",
-      "name": "inclusionAI: Ling 3.1 Flash",
-      "provider": "inclusionAI",
-      "model": "Ling 3.1 Flash",
-      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
-      "context_length": 262144,
-      "max_completion_tokens": 235929,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1790950024,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "supported_parameters": 15,
-      "is_router": false,
-      "url": "https://openrouter.ai/inclusionai/ling-3.1-flash"
-    },
-    {
       "id": "liquid/lfm-2.5-2.6b:free",
       "name": "LiquidAI: LFM2.5-2.6B (free)",
       "provider": "LiquidAI",
@@ -240,7 +194,7 @@
       "created": 1786470519,
       "expiration_date": null,
       "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
-      "supported_parameters": 19,
+      "supported_parameters": 18,
       "is_router": false,
       "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free"
     },
