@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-15T10:41:29.281Z",
+  "generated_at": "2026-10-16T10:28:30.451Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 426,
+  "total_models": 423,
   "count": 8,
   "models": [
     {
@@ -138,7 +138,7 @@
       "model": "Step 3.7 Flash",
       "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters...",
       "context_length": 262144,
-      "max_completion_tokens": 230400,
+      "max_completion_tokens": 256000,
       "modality": "text+image+video->text",
       "input_modalities": [
         "text",
@@ -165,7 +165,7 @@
       "model": "Step 5 Preview",
       "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
       "context_length": 1048576,
-      "max_completion_tokens": 64000,
+      "max_completion_tokens": 131072,
       "modality": "text+image+video->text",
       "input_modalities": [
         "text",

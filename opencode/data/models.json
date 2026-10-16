@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T10:41:28.939Z",
+  "generated_at": "2026-10-16T10:28:30.179Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,16 +7,16 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 14,
+  "total_free": 15,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 123,
-      "live_count": 86,
-      "count": 11,
+      "catalog_size": 126,
+      "live_count": 88,
+      "count": 13,
       "models": [
         {
           "id": "big-pickle",
@@ -44,7 +44,7 @@
           "config_id": "opencode/cat-jam-free",
           "name": "Cat Jam Free",
           "description": "A text-only reasoning model for coding and agentic workflows, with tool calling and structured JSON outputs.",
-          "context": 262144,
+          "context": 1048576,
           "max_output": 131072,
           "input_modalities": [
             "text"
@@ -83,6 +83,30 @@
           "canonical_model_id": "deepseek/deepseek-v4.1-flash"
         },
         {
+          "id": "glm-5.3-flash-free",
+          "config_id": "opencode/glm-5.3-flash-free",
+          "name": "GLM-5.3-Flash Free",
+          "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+          "context": 200000,
+          "max_output": 32000,
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": true,
+          "release_date": "2026-08-26",
+          "last_updated": "2026-08-26",
+          "canonical_model_id": "zhipuai/glm-5.3-flash"
+        },
+        {
           "id": "jev-1.13-free",
           "config_id": "opencode/jev-1.13-free",
           "name": "Jev 1.13 Free",
@@ -97,6 +121,27 @@
           "open_weights": false,
           "release_date": null,
           "last_updated": null,
+          "canonical_model_id": null
+        },
+        {
+          "id": "ll-alpha-free",
+          "config_id": "opencode/ll-alpha-free",
+          "name": "LL Alpha Free",
+          "description": "Best in class local model",
+          "context": 262144,
+          "max_output": 65536,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": false,
+          "open_weights": true,
+          "release_date": "2026-10-15",
+          "last_updated": "2026-10-15",
           "canonical_model_id": null
         },
         {
@@ -217,6 +262,28 @@
           "canonical_model_id": "nvidia/nemotron-3.5-lightning"
         },
         {
+          "id": "nemotron-3.5-super-vl-free",
+          "config_id": "opencode/nemotron-3.5-super-vl-free",
+          "name": "Nemotron 3.5 Super VL Free",
+          "description": "NVIDIA vision-language reasoning model for text, image, and video understanding and agentic tool use",
+          "context": 1048576,
+          "max_output": 131072,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": true,
+          "release_date": "2026-10-15",
+          "last_updated": "2026-10-15",
+          "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b"
+        },
+        {
           "id": "space-bunny-free",
           "config_id": "opencode/space-bunny-free",
           "name": "Space Bunny Free",
@@ -238,29 +305,6 @@
           "release_date": "2026-09-23",
           "last_updated": "2026-09-23",
           "canonical_model_id": null
-        },
-        {
-          "id": "step-5-preview-free",
-          "config_id": "opencode/step-5-preview-free",
-          "name": "Step 5 Preview Free",
-          "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
-          "context": 1000000,
-          "max_output": 65536,
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": false,
-          "release_date": "2026-09-16",
-          "last_updated": "2026-09-20",
-          "canonical_model_id": "stepfun/step-5-preview"
         }
       ]
     },
@@ -269,16 +313,16 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 38,
+      "catalog_size": 31,
       "live_count": 37,
-      "count": 3,
+      "count": 2,
       "models": [
         {
           "id": "cat-jam-free",
           "config_id": "opencode-go/cat-jam-free",
           "name": "Cat Jam Free",
           "description": "A text-only reasoning model for coding and agentic workflows, with tool calling and structured JSON outputs.",
-          "context": 262144,
+          "context": 1048576,
           "max_output": 131072,
           "input_modalities": [
             "text"
@@ -315,29 +359,6 @@
           "release_date": "2026-09-25",
           "last_updated": "2026-09-25",
           "canonical_model_id": "meituan/longcat-2.5-preview"
-        },
-        {
-          "id": "step-5-preview-free",
-          "config_id": "opencode-go/step-5-preview-free",
-          "name": "Step 5 Preview Free",
-          "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
-          "context": 1000000,
-          "max_output": 65536,
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": false,
-          "release_date": "2026-09-16",
-          "last_updated": "2026-09-20",
-          "canonical_model_id": "stepfun/step-5-preview"
         }
       ]
     }

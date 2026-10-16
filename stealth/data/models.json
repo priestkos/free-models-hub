@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T10:41:33.565Z",
+  "generated_at": "2026-10-16T10:28:31.073Z",
   "sources": [
     "https://openrouter.ai/api/v1/models",
     "https://opencode.ai/zen/v1/models",
@@ -7,20 +7,20 @@
     "https://inference-api.nousresearch.com/v1/models",
     "https://api.commandcode.ai/provider/v1/models"
   ],
-  "count": 2,
+  "count": 3,
   "providers": [
     {
       "key": "openrouter",
       "label": "OpenRouter",
       "endpoint": "https://openrouter.ai/api/v1/models",
-      "live_count": 462,
+      "live_count": 465,
       "count": 0
     },
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "endpoint": "https://opencode.ai/zen/v1/models",
-      "live_count": 86,
+      "live_count": 88,
       "count": 0
     },
     {
@@ -34,18 +34,34 @@
       "key": "nous-portal",
       "label": "Nous Portal",
       "endpoint": "https://inference-api.nousresearch.com/v1/models",
-      "live_count": 426,
+      "live_count": 423,
       "count": 1
     },
     {
       "key": "commandcode",
       "label": "Command Code",
       "endpoint": "https://api.commandcode.ai/provider/v1/models",
-      "live_count": 90,
-      "count": 1
+      "live_count": 92,
+      "count": 2
     }
   ],
   "models": [
+    {
+      "id": "stealth/cat-jam:free",
+      "name": "Cat Jam",
+      "provider_key": "commandcode",
+      "provider": "Command Code",
+      "description": "",
+      "context_length": 1048576,
+      "price": null,
+      "endpoints": [
+        "/chat/completions",
+        "/responses"
+      ],
+      "reasoning": false,
+      "tool_call": false,
+      "url": "https://commandcode.ai/models"
+    },
     {
       "id": "stealth/glyph-cluster:free",
       "name": "Glyph Cluster",

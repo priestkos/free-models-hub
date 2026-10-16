@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-15T10:41:28.460Z",
+  "generated_at": "2026-10-16T10:28:29.627Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 462,
-  "count": 17,
+  "total_models": 465,
+  "count": 18,
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -316,6 +316,31 @@
       "supported_parameters": 8,
       "is_router": false,
       "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "provider": "NVIDIA",
+      "model": "Nemotron 3.5 Super VL (free)",
+      "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
+      "context_length": 1000000,
+      "max_completion_tokens": 131072,
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1792076662,
+      "expiration_date": null,
+      "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "supported_parameters": 10,
+      "is_router": false,
+      "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free"
     },
     {
       "id": "poolside/laguna-s-2.1:free",
