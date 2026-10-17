@@ -1,10 +1,28 @@
 {
-  "generated_at": "2026-10-16T10:28:30.675Z",
+  "generated_at": "2026-10-17T09:59:12.908Z",
   "source": "https://api.commandcode.ai/provider/v1/models",
   "catalog": "https://commandcode.ai/models",
-  "total_models": 92,
-  "count": 3,
+  "total_models": 93,
+  "count": 4,
   "models": [
+    {
+      "id": "reflection/beam:free",
+      "name": "Beam 1.0",
+      "provider": "Command Code",
+      "note": "Free while it lasts.",
+      "deal_url": "https://commandcode.ai/models",
+      "context_length": 1048576,
+      "created": 1792231152,
+      "endpoints": [
+        "/chat/completions",
+        "/responses"
+      ],
+      "endpoint_labels": [
+        "Chat Completions",
+        "Responses"
+      ],
+      "url": "https://commandcode.ai/models"
+    },
     {
       "id": "stealth/cat-jam:free",
       "name": "Cat Jam",
@@ -12,7 +30,7 @@
       "note": "Free while it lasts.",
       "deal_url": "https://commandcode.ai/models",
       "context_length": 1048576,
-      "created": 1792146510,
+      "created": 1792231152,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -30,7 +48,7 @@
       "note": "Stealth preview — free while the preview lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
       "context_length": 256000,
-      "created": 1792146510,
+      "created": 1792231152,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -48,7 +66,7 @@
       "note": "Free while capacity lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#laguna-s-2.1-free",
       "context_length": 256000,
-      "created": 1792146510,
+      "created": 1792231152,
       "endpoints": [
         "/chat/completions",
         "/responses"

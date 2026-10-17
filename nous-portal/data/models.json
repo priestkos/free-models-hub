@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-16T10:28:30.451Z",
+  "generated_at": "2026-10-17T09:59:12.528Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 423,
+  "total_models": 426,
   "count": 8,
   "models": [
     {
@@ -57,31 +57,6 @@
       "url": "https://portal.nousresearch.com"
     },
     {
-      "id": "stealth/missingno",
-      "name": "MissingNo",
-      "provider": "stealth",
-      "model": "MissingNo",
-      "description": "MissingNo is a free reasoning model with a 262K-token context window, tool calling and structured outputs. Text input only. Reasoning is always on; control depth with the `reasoning` parameter (`low` / `medium` / `high` / `xhigh` / `max`).",
-      "context_length": 262144,
-      "max_completion_tokens": 131072,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1791417600,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "stealth/missingno",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 8,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
       "id": "poolside/laguna-s-2.1:free",
       "name": "Poolside: Laguna S 2.1",
       "provider": "Poolside",
@@ -129,6 +104,31 @@
       "reasoning": true,
       "tool_call": true,
       "supported_parameters": 6,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "reflection/beam-1.0-501b-a23b:free",
+      "name": "Reflection: Beam 1.0 501B A23B",
+      "provider": "Reflection",
+      "model": "Beam 1.0 501B A23B",
+      "description": "Beam 1.0 is a free reasoning model with a 262K-token context window, tool calling and structured outputs. Text input only. Reasoning is always on; control depth with the `reasoning` parameter (`low` / `medium` / `high` / `xhigh` / `max`).",
+      "context_length": 262144,
+      "max_completion_tokens": 131072,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1792108800,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "reflection/beam-1.0-501b-a23b:free",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 8,
       "url": "https://portal.nousresearch.com"
     },
     {

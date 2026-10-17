@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-16T10:28:29.627Z",
+  "generated_at": "2026-10-17T09:59:11.736Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 465,
-  "count": 18,
+  "total_models": 470,
+  "count": 19,
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -437,6 +437,29 @@
       "supported_parameters": 11,
       "is_router": false,
       "url": "https://openrouter.ai/thinkingmachines/inkling-small:free"
+    },
+    {
+      "id": "xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "provider": "XingChen",
+      "model": "Xing4.0 29B A4B (free)",
+      "description": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the TeleChat series. It has 29B total parameters with 4B active per token...",
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1792177496,
+      "expiration_date": null,
+      "hugging_face_id": "XingChen-AGI/Xing4.0-29B-A4B",
+      "supported_parameters": 16,
+      "is_router": false,
+      "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free"
     }
   ]
 }
