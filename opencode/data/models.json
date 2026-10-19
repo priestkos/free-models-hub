@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T10:12:37.100Z",
+  "generated_at": "2026-10-19T11:48:20.542Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 12,
+  "total_free": 14,
   "providers": [
     {
       "key": "opencode",
@@ -15,8 +15,8 @@
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
       "catalog_size": 127,
-      "live_count": 85,
-      "count": 10,
+      "live_count": 86,
+      "count": 11,
       "models": [
         {
           "id": "beam-free",
@@ -170,6 +170,23 @@
           "canonical_model_id": "xiaomi/mimo-v2.6-flash"
         },
         {
+          "id": "minimax-m3.1-flash-free",
+          "config_id": "opencode/minimax-m3.1-flash-free",
+          "name": "Minimax M3.1 Flash Free",
+          "description": "",
+          "context": null,
+          "max_output": null,
+          "input_modalities": [],
+          "output_modalities": [],
+          "reasoning": false,
+          "tool_call": false,
+          "attachment": false,
+          "open_weights": false,
+          "release_date": null,
+          "last_updated": null,
+          "canonical_model_id": null
+        },
+        {
           "id": "nemotron-3.5-lightning-free",
           "config_id": "opencode/nemotron-3.5-lightning-free",
           "name": "Nemotron 3.5 Lightning Free",
@@ -243,8 +260,8 @@
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
       "catalog_size": 32,
-      "live_count": 37,
-      "count": 2,
+      "live_count": 38,
+      "count": 3,
       "models": [
         {
           "id": "beam-free",
@@ -288,6 +305,23 @@
           "release_date": "2026-09-25",
           "last_updated": "2026-09-25",
           "canonical_model_id": "meituan/longcat-2.5-preview"
+        },
+        {
+          "id": "minimax-m3.1-flash-free",
+          "config_id": "opencode-go/minimax-m3.1-flash-free",
+          "name": "Minimax M3.1 Flash Free",
+          "description": "",
+          "context": null,
+          "max_output": null,
+          "input_modalities": [],
+          "output_modalities": [],
+          "reasoning": false,
+          "tool_call": false,
+          "attachment": false,
+          "open_weights": false,
+          "release_date": null,
+          "last_updated": null,
+          "canonical_model_id": null
         }
       ]
     }
