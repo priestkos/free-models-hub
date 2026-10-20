@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T11:48:20.786Z",
+  "generated_at": "2026-10-20T10:47:19.710Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
   "total_models": 427,
-  "count": 8,
+  "count": 7,
   "models": [
     {
       "id": "meituan/longcat-2.0:free",
@@ -156,33 +156,6 @@
       "reasoning": true,
       "tool_call": true,
       "supported_parameters": 18,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
-      "id": "stepfun/step-5-preview:free",
-      "name": "StepFun: Step 5 Preview",
-      "provider": "StepFun",
-      "model": "Step 5 Preview",
-      "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
-      "context_length": 1048576,
-      "max_completion_tokens": 131072,
-      "modality": "text+image+video->text",
-      "input_modalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1791462849,
-      "expiration_date": null,
-      "hugging_face_id": "stepfun-ai/Step-5-Preview",
-      "canonical_slug": "stepfun/step-5-preview-20261008",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 20,
       "url": "https://portal.nousresearch.com"
     },
     {
