@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T10:47:19.463Z",
+  "generated_at": "2026-10-21T10:59:11.245Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -14,8 +14,8 @@
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 128,
-      "live_count": 85,
+      "catalog_size": 129,
+      "live_count": 86,
       "count": 10,
       "models": [
         {

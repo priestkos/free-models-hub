@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T10:47:19.710Z",
+  "generated_at": "2026-10-21T10:59:11.576Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 427,
-  "count": 7,
+  "total_models": 426,
+  "count": 8,
   "models": [
     {
       "id": "meituan/longcat-2.0:free",
@@ -54,6 +54,32 @@
       "reasoning": false,
       "tool_call": true,
       "supported_parameters": 12,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "ornith/ornith-1.5-122b:free",
+      "name": "Ornith: Ornith 1.5 122B",
+      "provider": "Ornith",
+      "model": "Ornith 1.5 122B",
+      "description": "Ornith 1.5 122B is a free reasoning model with a 262K-token context window, tool calling and image input. Reasoning is on by default; control depth with `reasoning_effort` (`none` to `max`).",
+      "context_length": 262144,
+      "max_completion_tokens": 262144,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1792454400,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "ornith/ornith-1.5-122b:free",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 11,
       "url": "https://portal.nousresearch.com"
     },
     {
