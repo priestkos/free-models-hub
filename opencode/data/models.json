@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T10:59:11.245Z",
+  "generated_at": "2026-10-22T10:58:06.834Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,14 +7,14 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 13,
+  "total_free": 12,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 129,
+      "catalog_size": 130,
       "live_count": 86,
       "count": 10,
       "models": [
@@ -83,6 +83,27 @@
           "canonical_model_id": "deepseek/deepseek-v4.1-flash"
         },
         {
+          "id": "flint-40b-free",
+          "config_id": "opencode/flint-40b-free",
+          "name": "Flint 40B Free",
+          "description": "Open-weight mixture-of-experts model with about 2.5B active parameters for local coding agents",
+          "context": 262144,
+          "max_output": 65536,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": false,
+          "open_weights": true,
+          "release_date": "2026-10-21",
+          "last_updated": "2026-10-21",
+          "canonical_model_id": "recursive/flint"
+        },
+        {
           "id": "glm-5.3-flash-free",
           "config_id": "opencode/glm-5.3-flash-free",
           "name": "GLM-5.3-Flash Free",
@@ -122,28 +143,6 @@
           "release_date": null,
           "last_updated": null,
           "canonical_model_id": null
-        },
-        {
-          "id": "longcat-2.5-preview-free",
-          "config_id": "opencode/longcat-2.5-preview-free",
-          "name": "LongCat 2.5 Preview Free",
-          "description": "Meituan's multimodal reasoning model for coding and agent tasks, with image understanding and a 1M-token context window",
-          "context": 1000000,
-          "max_output": 131072,
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": false,
-          "release_date": "2026-09-25",
-          "last_updated": "2026-09-25",
-          "canonical_model_id": "meituan/longcat-2.5-preview"
         },
         {
           "id": "mimo-v2.6-flash-free",
@@ -243,8 +242,8 @@
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
       "catalog_size": 33,
-      "live_count": 37,
-      "count": 3,
+      "live_count": 36,
+      "count": 2,
       "models": [
         {
           "id": "beam-free",
@@ -266,28 +265,6 @@
           "release_date": "2026-10-05",
           "last_updated": "2026-10-16",
           "canonical_model_id": "reflection/beam-1.0-501b-a23b"
-        },
-        {
-          "id": "longcat-2.5-preview-free",
-          "config_id": "opencode-go/longcat-2.5-preview-free",
-          "name": "LongCat 2.5 Preview Free",
-          "description": "Meituan's multimodal reasoning model for coding and agent tasks, with image understanding and a 1M-token context window",
-          "context": 1000000,
-          "max_output": 131072,
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": false,
-          "release_date": "2026-09-25",
-          "last_updated": "2026-09-25",
-          "canonical_model_id": "meituan/longcat-2.5-preview"
         },
         {
           "id": "minimax-m3.1-flash-free",

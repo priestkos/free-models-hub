@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-21T10:59:10.649Z",
+  "generated_at": "2026-10-22T10:58:06.461Z",
   "source": "https://openrouter.ai/api/v1/models",
   "total_models": 468,
-  "count": 20,
+  "count": 21,
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -412,6 +412,29 @@
       "supported_parameters": 6,
       "is_router": false,
       "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free"
+    },
+    {
+      "id": "recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "provider": "Recursive",
+      "model": "Flint (free)",
+      "description": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recursive's autoresearch system Eureka Machine for coding agents. It is suited...",
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1792622765,
+      "expiration_date": null,
+      "hugging_face_id": "RecursiveSI/flint",
+      "supported_parameters": 11,
+      "is_router": false,
+      "url": "https://openrouter.ai/recursive/flint-v1.0:free"
     },
     {
       "id": "thinkingmachines/inkling:free",

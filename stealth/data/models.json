@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T10:59:12.496Z",
+  "generated_at": "2026-10-22T10:58:07.515Z",
   "sources": [
     "https://openrouter.ai/api/v1/models",
     "https://opencode.ai/zen/v1/models",
@@ -27,21 +27,21 @@
       "key": "opencode-go",
       "label": "OpenCode Go",
       "endpoint": "https://opencode.ai/zen/go/v1/models",
-      "live_count": 37,
+      "live_count": 36,
       "count": 0
     },
     {
       "key": "nous-portal",
       "label": "Nous Portal",
       "endpoint": "https://inference-api.nousresearch.com/v1/models",
-      "live_count": 426,
+      "live_count": 424,
       "count": 0
     },
     {
       "key": "commandcode",
       "label": "Command Code",
       "endpoint": "https://api.commandcode.ai/provider/v1/models",
-      "live_count": 96,
+      "live_count": 94,
       "count": 1
     }
   ],

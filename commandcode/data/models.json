@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T10:59:11.871Z",
+  "generated_at": "2026-10-22T10:58:07.257Z",
   "source": "https://api.commandcode.ai/provider/v1/models",
   "catalog": "https://commandcode.ai/models",
-  "total_models": 96,
-  "count": 5,
+  "total_models": 94,
+  "count": 3,
   "models": [
     {
       "id": "reflection/beam:free",
@@ -12,7 +12,7 @@
       "note": "Free while it lasts.",
       "deal_url": "https://commandcode.ai/models",
       "context_length": 1048576,
-      "created": 1792580351,
+      "created": 1792666687,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -30,7 +30,7 @@
       "note": "Stealth preview — free while the preview lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
       "context_length": 256000,
-      "created": 1792580351,
+      "created": 1792666687,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -48,7 +48,7 @@
       "note": "Free while capacity lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#laguna-s-2.1-free",
       "context_length": 256000,
-      "created": 1792580351,
+      "created": 1792666687,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -56,38 +56,6 @@
       "endpoint_labels": [
         "Chat Completions",
         "Responses"
-      ],
-      "url": "https://commandcode.ai/models"
-    },
-    {
-      "id": "minimax/minimax-m3.1-flash:free",
-      "name": "MiniMax M3.1 Flash",
-      "provider": "Command Code",
-      "note": "Free while it lasts.",
-      "deal_url": "https://commandcode.ai/models",
-      "context_length": 1000000,
-      "created": 1792580351,
-      "endpoints": [
-        "/chat/completions"
-      ],
-      "endpoint_labels": [
-        "Chat Completions"
-      ],
-      "url": "https://commandcode.ai/models"
-    },
-    {
-      "id": "ornith/ornith-1.5-122b:free",
-      "name": "Ornith 1.5 122B",
-      "provider": "Command Code",
-      "note": "Free while it lasts.",
-      "deal_url": "https://commandcode.ai/models",
-      "context_length": 262144,
-      "created": 1792580351,
-      "endpoints": [
-        "/chat/completions"
-      ],
-      "endpoint_labels": [
-        "Chat Completions"
       ],
       "url": "https://commandcode.ai/models"
     }
