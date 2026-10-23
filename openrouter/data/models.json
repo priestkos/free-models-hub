@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T10:58:06.461Z",
+  "generated_at": "2026-10-23T10:51:12.248Z",
   "source": "https://openrouter.ai/api/v1/models",
   "total_models": 468,
-  "count": 21,
+  "count": 20,
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -197,31 +197,6 @@
       "supported_parameters": 18,
       "is_router": false,
       "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free"
-    },
-    {
-      "id": "minimax/minimax-m3.1-flash:free",
-      "name": "MiniMax: MiniMax M3.1 Flash (free)",
-      "provider": "MiniMax",
-      "model": "MiniMax M3.1 Flash (free)",
-      "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex,...",
-      "context_length": 1000000,
-      "max_completion_tokens": 524288,
-      "modality": "text+image+video->text",
-      "input_modalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1792379569,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "supported_parameters": 9,
-      "is_router": false,
-      "url": "https://openrouter.ai/minimax/minimax-m3.1-flash:free"
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",

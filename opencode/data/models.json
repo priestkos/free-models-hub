@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T10:58:06.834Z",
+  "generated_at": "2026-10-23T10:51:12.709Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 12,
+  "total_free": 10,
   "providers": [
     {
       "key": "opencode",
@@ -15,8 +15,8 @@
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
       "catalog_size": 130,
-      "live_count": 86,
-      "count": 10,
+      "live_count": 85,
+      "count": 9,
       "models": [
         {
           "id": "beam-free",
@@ -169,29 +169,6 @@
           "canonical_model_id": "xiaomi/mimo-v2.6-flash"
         },
         {
-          "id": "minimax-m3.1-flash-free",
-          "config_id": "opencode/minimax-m3.1-flash-free",
-          "name": "MiniMax M3.1 Flash Free",
-          "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
-          "context": 1000000,
-          "max_output": 512000,
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": false,
-          "release_date": "2026-10-19",
-          "last_updated": "2026-10-19",
-          "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
-        },
-        {
           "id": "nemotron-3.5-lightning-free",
           "config_id": "opencode/nemotron-3.5-lightning-free",
           "name": "Nemotron 3.5 Lightning Free",
@@ -241,9 +218,9 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 33,
+      "catalog_size": 34,
       "live_count": 36,
-      "count": 2,
+      "count": 1,
       "models": [
         {
           "id": "beam-free",
@@ -265,29 +242,6 @@
           "release_date": "2026-10-05",
           "last_updated": "2026-10-16",
           "canonical_model_id": "reflection/beam-1.0-501b-a23b"
-        },
-        {
-          "id": "minimax-m3.1-flash-free",
-          "config_id": "opencode-go/minimax-m3.1-flash-free",
-          "name": "MiniMax M3.1 Flash Free",
-          "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
-          "context": 1000000,
-          "max_output": 512000,
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": false,
-          "release_date": "2026-10-19",
-          "last_updated": "2026-10-19",
-          "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
         }
       ]
     }
