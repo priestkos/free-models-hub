@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:51:12.709Z",
+  "generated_at": "2026-10-24T10:06:01.334Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -218,8 +218,8 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 34,
-      "live_count": 36,
+      "catalog_size": 35,
+      "live_count": 37,
       "count": 1,
       "models": [
         {
