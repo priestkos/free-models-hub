@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T10:06:01.334Z",
+  "generated_at": "2026-10-25T10:31:10.431Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 10,
+  "total_free": 11,
   "providers": [
     {
       "key": "opencode",
@@ -113,8 +113,7 @@
           "input_modalities": [
             "text",
             "image",
-            "video",
-            "pdf"
+            "video"
           ],
           "output_modalities": [
             "text"
@@ -218,9 +217,9 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 35,
-      "live_count": 37,
-      "count": 1,
+      "catalog_size": 37,
+      "live_count": 38,
+      "count": 2,
       "models": [
         {
           "id": "beam-free",
@@ -242,6 +241,27 @@
           "release_date": "2026-10-05",
           "last_updated": "2026-10-16",
           "canonical_model_id": "reflection/beam-1.0-501b-a23b"
+        },
+        {
+          "id": "iceman-contributor-free",
+          "config_id": "opencode-go/iceman-contributor-free",
+          "name": "Iceman Contributor Free",
+          "description": "Stealth model, free for a limited time",
+          "context": 262144,
+          "max_output": 131072,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": false,
+          "open_weights": false,
+          "release_date": "2026-10-24",
+          "last_updated": "2026-10-24",
+          "canonical_model_id": null
         }
       ]
     }
