@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-26T12:03:38.228Z",
+  "generated_at": "2026-10-27T11:23:45.026Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 467,
-  "count": 20,
+  "total_models": 463,
+  "count": 19,
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -223,29 +223,6 @@
       "supported_parameters": 8,
       "is_router": false,
       "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
-    },
-    {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "name": "NVIDIA: Nemotron 3 Super (free)",
-      "provider": "NVIDIA",
-      "model": "Nemotron 3 Super (free)",
-      "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
-      "context_length": 262144,
-      "max_completion_tokens": 235929,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1773245239,
-      "expiration_date": null,
-      "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-      "supported_parameters": 11,
-      "is_router": false,
-      "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free"
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
