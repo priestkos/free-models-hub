@@ -1,35 +1,10 @@
 {
-  "generated_at": "2026-10-28T11:56:36.470Z",
+  "generated_at": "2026-10-29T12:05:54.773Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 425,
-  "count": 7,
+  "total_models": 383,
+  "count": 6,
   "models": [
-    {
-      "id": "meituan/longcat-2.0:free",
-      "name": "Meituan: LongCat 2.0",
-      "provider": "Meituan",
-      "model": "LongCat 2.0",
-      "description": "LongCat 2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total. It is suited for coding, repository-level changes, long-horizon problem solving, and agentic...",
-      "context_length": 1048756,
-      "max_completion_tokens": 262144,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1784554658,
-      "expiration_date": null,
-      "hugging_face_id": "meituan-longcat/LongCat-2.0",
-      "canonical_slug": "meituan/longcat-2.0-20260720",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 15,
-      "url": "https://portal.nousresearch.com"
-    },
     {
       "id": "ornith/ornith-1.5-122b:free",
       "name": "Ornith: Ornith 1.5 122B",

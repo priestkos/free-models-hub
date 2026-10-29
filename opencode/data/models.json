@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T11:56:35.941Z",
+  "generated_at": "2026-10-29T12:05:54.523Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -15,7 +15,7 @@
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
       "catalog_size": 130,
-      "live_count": 84,
+      "live_count": 82,
       "count": 9,
       "models": [
         {
@@ -218,7 +218,7 @@
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
       "catalog_size": 37,
-      "live_count": 38,
+      "live_count": 28,
       "count": 2,
       "models": [
         {
