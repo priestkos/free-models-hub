@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T12:05:54.523Z",
+  "generated_at": "2026-10-30T11:57:44.819Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 11,
+  "total_free": 10,
   "providers": [
     {
       "key": "opencode",
@@ -15,8 +15,8 @@
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
       "catalog_size": 130,
-      "live_count": 82,
-      "count": 9,
+      "live_count": 78,
+      "count": 8,
       "models": [
         {
           "id": "beam-free",
@@ -125,23 +125,6 @@
           "release_date": "2026-08-26",
           "last_updated": "2026-08-26",
           "canonical_model_id": "zhipuai/glm-5.3-flash"
-        },
-        {
-          "id": "jev-1.13-free",
-          "config_id": "opencode/jev-1.13-free",
-          "name": "Jev 1.13 Free",
-          "description": "Returns structured decisions rather than free-form text, so it is not a replacement for a text-generating coding model.",
-          "context": null,
-          "max_output": null,
-          "input_modalities": [],
-          "output_modalities": [],
-          "reasoning": false,
-          "tool_call": false,
-          "attachment": false,
-          "open_weights": false,
-          "release_date": null,
-          "last_updated": null,
-          "canonical_model_id": null
         },
         {
           "id": "mimo-v2.6-flash-free",

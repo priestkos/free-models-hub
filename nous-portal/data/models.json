@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-29T12:05:54.773Z",
+  "generated_at": "2026-10-30T11:57:45.112Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 383,
+  "total_models": 382,
   "count": 6,
   "models": [
     {
