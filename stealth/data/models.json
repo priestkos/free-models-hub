@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T11:57:45.682Z",
+  "generated_at": "2026-10-31T11:31:52.918Z",
   "sources": [
     "https://openrouter.ai/api/v1/models",
     "https://opencode.ai/zen/v1/models",
@@ -41,7 +41,7 @@
       "key": "commandcode",
       "label": "Command Code",
       "endpoint": "https://api.commandcode.ai/provider/v1/models",
-      "live_count": 94,
+      "live_count": 95,
       "count": 1
     }
   ],
