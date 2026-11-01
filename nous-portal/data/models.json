@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T11:31:52.446Z",
+  "generated_at": "2026-11-01T12:29:35.875Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 382,
-  "count": 6,
+  "total_models": 378,
+  "count": 4,
   "models": [
     {
       "id": "ornith/ornith-1.5-122b:free",
@@ -29,56 +29,6 @@
       "reasoning": true,
       "tool_call": true,
       "supported_parameters": 11,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
-      "id": "poolside/laguna-s-2.1:free",
-      "name": "Poolside: Laguna S 2.1",
-      "provider": "Poolside",
-      "model": "Laguna S 2.1",
-      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
-      "context_length": 262144,
-      "max_completion_tokens": 131072,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1784652683,
-      "expiration_date": "2026-10-31",
-      "hugging_face_id": "poolside/Laguna-S-2.1",
-      "canonical_slug": "poolside/laguna-s-2.1-20260720",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 6,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "name": "Poolside: Laguna XS 2.1",
-      "provider": "Poolside",
-      "model": "Laguna XS 2.1",
-      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1783002429,
-      "expiration_date": "2026-10-31",
-      "hugging_face_id": "poolside/Laguna-XS-2.1",
-      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 6,
       "url": "https://portal.nousresearch.com"
     },
     {

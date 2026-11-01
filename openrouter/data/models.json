@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-31T11:31:51.786Z",
+  "generated_at": "2026-11-01T12:29:34.876Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 456,
-  "count": 19,
+  "total_models": 452,
+  "count": 17,
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -318,52 +318,6 @@
       "supported_parameters": 10,
       "is_router": false,
       "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free"
-    },
-    {
-      "id": "poolside/laguna-s-2.1:free",
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "provider": "Poolside",
-      "model": "Laguna S 2.1 (free)",
-      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1784652683,
-      "expiration_date": "2026-10-31",
-      "hugging_face_id": "poolside/Laguna-S-2.1",
-      "supported_parameters": 6,
-      "is_router": false,
-      "url": "https://openrouter.ai/poolside/laguna-s-2.1:free"
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "provider": "Poolside",
-      "model": "Laguna XS 2.1 (free)",
-      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1783002429,
-      "expiration_date": "2026-10-31",
-      "hugging_face_id": "poolside/Laguna-XS-2.1",
-      "supported_parameters": 6,
-      "is_router": false,
-      "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free"
     },
     {
       "id": "recursive/flint-v1.0:free",
