@@ -1,36 +1,10 @@
 {
-  "generated_at": "2026-11-02T14:29:08.575Z",
+  "generated_at": "2026-11-03T13:27:39.994Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 379,
-  "count": 4,
+  "total_models": 378,
+  "count": 3,
   "models": [
-    {
-      "id": "ornith/ornith-1.5-122b:free",
-      "name": "Ornith: Ornith 1.5 122B",
-      "provider": "Ornith",
-      "model": "Ornith 1.5 122B",
-      "description": "Ornith 1.5 122B is a free reasoning model with a 262K-token context window, tool calling and image input. Reasoning is on by default; control depth with `reasoning_effort` (`none` to `max`).",
-      "context_length": 262144,
-      "max_completion_tokens": 262144,
-      "modality": "text+image->text",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1792454400,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "ornith/ornith-1.5-122b:free",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 11,
-      "url": "https://portal.nousresearch.com"
-    },
     {
       "id": "reflection/beam-1.0-501b-a23b:free",
       "name": "Reflection: Beam 1.0 501B A23B",

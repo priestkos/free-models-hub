@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T14:29:08.285Z",
+  "generated_at": "2026-11-03T13:27:39.760Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,16 +7,16 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 10,
+  "total_free": 11,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 130,
-      "live_count": 78,
-      "count": 8,
+      "catalog_size": 131,
+      "live_count": 79,
+      "count": 9,
       "models": [
         {
           "id": "beam-free",
@@ -192,6 +192,28 @@
           "release_date": "2026-10-15",
           "last_updated": "2026-10-15",
           "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b"
+        },
+        {
+          "id": "pulse-alpha-free",
+          "config_id": "opencode/pulse-alpha-free",
+          "name": "Pulse Alpha Free",
+          "description": "Stealth reasoning model with text and image input and tool use",
+          "context": 1048576,
+          "max_output": 131072,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": false,
+          "release_date": "2026-11-02",
+          "last_updated": "2026-11-02",
+          "canonical_model_id": null
         }
       ]
     },
