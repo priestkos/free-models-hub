@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T13:27:40.697Z",
+  "generated_at": "2026-11-04T13:37:47.049Z",
   "sources": [
     "https://openrouter.ai/api/v1/models",
     "https://opencode.ai/zen/v1/models",
@@ -7,20 +7,20 @@
     "https://inference-api.nousresearch.com/v1/models",
     "https://api.commandcode.ai/provider/v1/models"
   ],
-  "count": 1,
+  "count": 4,
   "providers": [
     {
       "key": "openrouter",
       "label": "OpenRouter",
       "endpoint": "https://openrouter.ai/api/v1/models",
-      "live_count": 451,
-      "count": 0
+      "live_count": 453,
+      "count": 1
     },
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "endpoint": "https://opencode.ai/zen/v1/models",
-      "live_count": 79,
+      "live_count": 80,
       "count": 0
     },
     {
@@ -34,18 +34,33 @@
       "key": "nous-portal",
       "label": "Nous Portal",
       "endpoint": "https://inference-api.nousresearch.com/v1/models",
-      "live_count": 378,
-      "count": 0
+      "live_count": 384,
+      "count": 1
     },
     {
       "key": "commandcode",
       "label": "Command Code",
       "endpoint": "https://api.commandcode.ai/provider/v1/models",
-      "live_count": 95,
-      "count": 1
+      "live_count": 96,
+      "count": 2
     }
   ],
   "models": [
+    {
+      "id": "stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "provider_key": "commandcode",
+      "provider": "Command Code",
+      "description": "",
+      "context_length": 1048576,
+      "price": null,
+      "endpoints": [
+        "/chat/completions"
+      ],
+      "reasoning": false,
+      "tool_call": false,
+      "url": "https://commandcode.ai/models"
+    },
     {
       "id": "stealth/glyph-cluster:free",
       "name": "Glyph Cluster",
@@ -61,6 +76,38 @@
       "reasoning": false,
       "tool_call": false,
       "url": "https://commandcode.ai/models"
+    },
+    {
+      "id": "stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "provider_key": "nous-portal",
+      "provider": "Nous Portal",
+      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
+      "context_length": 1048576,
+      "price": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "endpoints": [],
+      "reasoning": true,
+      "tool_call": true,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "provider_key": "openrouter",
+      "provider": "OpenRouter",
+      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
+      "context_length": 1048576,
+      "price": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "endpoints": [],
+      "reasoning": true,
+      "tool_call": true,
+      "url": "https://openrouter.ai/stealth/crouton-alpha"
     }
   ]
 }
