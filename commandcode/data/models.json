@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T13:37:46.737Z",
+  "generated_at": "2026-11-05T13:50:19.790Z",
   "source": "https://api.commandcode.ai/provider/v1/models",
   "catalog": "https://commandcode.ai/models",
-  "total_models": 96,
-  "count": 3,
+  "total_models": 95,
+  "count": 2,
   "models": [
     {
       "id": "reflection/beam:free",
@@ -12,7 +12,7 @@
       "note": "Free while it lasts.",
       "deal_url": "https://commandcode.ai/models",
       "context_length": 1048576,
-      "created": 1793799466,
+      "created": 1793886619,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -30,25 +30,7 @@
       "note": "Stealth preview — free while the preview lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
       "context_length": 256000,
-      "created": 1793799466,
-      "endpoints": [
-        "/chat/completions",
-        "/responses"
-      ],
-      "endpoint_labels": [
-        "Chat Completions",
-        "Responses"
-      ],
-      "url": "https://commandcode.ai/models"
-    },
-    {
-      "id": "poolside/laguna-s-2.1-free",
-      "name": "Laguna S 2.1",
-      "provider": "Command Code",
-      "note": "Free while capacity lasts.",
-      "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#laguna-s-2.1-free",
-      "context_length": 256000,
-      "created": 1793799466,
+      "created": 1793886619,
       "endpoints": [
         "/chat/completions",
         "/responses"

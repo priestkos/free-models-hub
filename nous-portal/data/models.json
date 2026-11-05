@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T13:37:46.363Z",
+  "generated_at": "2026-11-05T13:50:19.586Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 384,
-  "count": 4,
+  "total_models": 385,
+  "count": 5,
   "models": [
     {
       "id": "stealth/crouton-alpha",
@@ -32,6 +32,32 @@
       "reasoning": true,
       "tool_call": true,
       "supported_parameters": 10,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "meituan/longcat-2.5:free",
+      "name": "Meituan: LongCat 2.5",
+      "provider": "Meituan",
+      "model": "LongCat 2.5",
+      "description": "Meituan's LongCat 2.5. 1M context, image input, reasoning on by default. Free.",
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1793577600,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "meituan/longcat-2.5:free",
+      "reasoning": false,
+      "tool_call": true,
+      "supported_parameters": 12,
       "url": "https://portal.nousresearch.com"
     },
     {
