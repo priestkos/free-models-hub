@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:50:20.160Z",
+  "generated_at": "2026-11-06T13:35:12.079Z",
   "sources": [
     "https://openrouter.ai/api/v1/models",
     "https://opencode.ai/zen/v1/models",
@@ -13,7 +13,7 @@
       "key": "openrouter",
       "label": "OpenRouter",
       "endpoint": "https://openrouter.ai/api/v1/models",
-      "live_count": 452,
+      "live_count": 453,
       "count": 1
     },
     {
@@ -27,7 +27,7 @@
       "key": "opencode-go",
       "label": "OpenCode Go",
       "endpoint": "https://opencode.ai/zen/go/v1/models",
-      "live_count": 29,
+      "live_count": 30,
       "count": 0
     },
     {

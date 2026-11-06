@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:50:19.280Z",
+  "generated_at": "2026-11-06T13:35:11.371Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 12,
+  "total_free": 13,
   "providers": [
     {
       "key": "opencode",
@@ -246,9 +246,9 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 38,
-      "live_count": 29,
-      "count": 2,
+      "catalog_size": 39,
+      "live_count": 30,
+      "count": 3,
       "models": [
         {
           "id": "beam-free",
@@ -270,6 +270,30 @@
           "release_date": "2026-10-05",
           "last_updated": "2026-10-16",
           "canonical_model_id": "reflection/beam-1.0-501b-a23b"
+        },
+        {
+          "id": "crouton-alpha-free",
+          "config_id": "opencode-go/crouton-alpha-free",
+          "name": "Crouton Alpha Free",
+          "description": "Stealth reasoning model with text, image, video and PDF input and tool use",
+          "context": 1048576,
+          "max_output": 270000,
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": false,
+          "release_date": "2026-11-03",
+          "last_updated": "2026-11-03",
+          "canonical_model_id": null
         },
         {
           "id": "iceman-contributor-free",
