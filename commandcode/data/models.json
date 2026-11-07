@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-06T13:35:11.744Z",
+  "generated_at": "2026-11-07T12:15:01.527Z",
   "source": "https://api.commandcode.ai/provider/v1/models",
   "catalog": "https://commandcode.ai/models",
-  "total_models": 95,
+  "total_models": 96,
   "count": 2,
   "models": [
     {
@@ -12,7 +12,7 @@
       "note": "Free while it lasts.",
       "deal_url": "https://commandcode.ai/models",
       "context_length": 1048576,
-      "created": 1793972111,
+      "created": 1794053701,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -30,7 +30,7 @@
       "note": "Stealth preview — free while the preview lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
       "context_length": 256000,
-      "created": 1793972111,
+      "created": 1794053701,
       "endpoints": [
         "/chat/completions",
         "/responses"
