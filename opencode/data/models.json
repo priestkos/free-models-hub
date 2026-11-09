@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T12:35:45.434Z",
+  "generated_at": "2026-11-09T14:53:14.871Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,16 +7,16 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 14,
+  "total_free": 16,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 134,
-      "live_count": 81,
-      "count": 11,
+      "catalog_size": 135,
+      "live_count": 82,
+      "count": 12,
       "models": [
         {
           "id": "beam-free",
@@ -194,6 +194,28 @@
           "canonical_model_id": "thinkingmachines/inkling-2-small"
         },
         {
+          "id": "longcat-2.5-free",
+          "config_id": "opencode/longcat-2.5-free",
+          "name": "LongCat 2.5 Free",
+          "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
+          "context": 1000000,
+          "max_output": 262144,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": false,
+          "release_date": "2026-11-02",
+          "last_updated": "2026-11-02",
+          "canonical_model_id": "meituan/longcat-2.5"
+        },
+        {
           "id": "mimo-v2.6-flash-free",
           "config_id": "opencode/mimo-v2.6-flash-free",
           "name": "MiMo-V2.6-Flash Free",
@@ -267,9 +289,9 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 39,
-      "live_count": 30,
-      "count": 3,
+      "catalog_size": 40,
+      "live_count": 31,
+      "count": 4,
       "models": [
         {
           "id": "beam-free",
@@ -336,6 +358,28 @@
           "release_date": "2026-10-24",
           "last_updated": "2026-10-24",
           "canonical_model_id": null
+        },
+        {
+          "id": "longcat-2.5-free",
+          "config_id": "opencode-go/longcat-2.5-free",
+          "name": "LongCat 2.5 Free",
+          "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
+          "context": 1000000,
+          "max_output": 262144,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": false,
+          "release_date": "2026-11-02",
+          "last_updated": "2026-11-02",
+          "canonical_model_id": "meituan/longcat-2.5"
         }
       ]
     }
