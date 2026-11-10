@@ -1,39 +1,10 @@
 {
-  "generated_at": "2026-11-09T14:53:15.411Z",
+  "generated_at": "2026-11-10T14:06:21.007Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 394,
-  "count": 5,
+  "total_models": 396,
+  "count": 4,
   "models": [
-    {
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
-      "provider": "stealth",
-      "model": "Crouton Alpha",
-      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
-      "context_length": 1048576,
-      "max_completion_tokens": 943718,
-      "modality": "text+image+file+audio+video->text",
-      "input_modalities": [
-        "text",
-        "image",
-        "video",
-        "file",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1793669930,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "stealth/crouton-alpha",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 10,
-      "url": "https://portal.nousresearch.com"
-    },
     {
       "id": "meituan/longcat-2.5:free",
       "name": "LongCat-2.5:Free",

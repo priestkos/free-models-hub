@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T14:53:14.484Z",
+  "generated_at": "2026-11-10T14:06:20.176Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 462,
+  "total_models": 465,
   "count": 16,
   "models": [
     {
@@ -26,33 +26,6 @@
       "supported_parameters": 12,
       "is_router": false,
       "url": "https://openrouter.ai/cohere/north-mini-code:free"
-    },
-    {
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
-      "provider": "stealth",
-      "model": "Crouton Alpha",
-      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
-      "context_length": 1048576,
-      "max_completion_tokens": 943718,
-      "modality": "text+image+file+audio+video->text",
-      "input_modalities": [
-        "text",
-        "image",
-        "video",
-        "file",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1793669930,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "supported_parameters": 10,
-      "is_router": false,
-      "url": "https://openrouter.ai/stealth/crouton-alpha"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
@@ -367,6 +340,30 @@
       "supported_parameters": 11,
       "is_router": false,
       "url": "https://openrouter.ai/recursive/flint-v1.0:free"
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "provider": "Thinking Machines",
+      "model": "Inkling 2 Small (free)",
+      "description": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second Inkling...",
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1794261847,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "supported_parameters": 9,
+      "is_router": false,
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free"
     },
     {
       "id": "xingchen-agi/xing4.0-29b-a4b:free",

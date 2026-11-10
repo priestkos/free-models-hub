@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T14:53:16.059Z",
+  "generated_at": "2026-11-10T14:06:22.038Z",
   "sources": [
     "https://openrouter.ai/api/v1/models",
     "https://opencode.ai/zen/v1/models",
@@ -7,41 +7,41 @@
     "https://inference-api.nousresearch.com/v1/models",
     "https://api.commandcode.ai/provider/v1/models"
   ],
-  "count": 4,
+  "count": 2,
   "providers": [
     {
       "key": "openrouter",
       "label": "OpenRouter",
       "endpoint": "https://openrouter.ai/api/v1/models",
-      "live_count": 462,
-      "count": 1
+      "live_count": 465,
+      "count": 0
     },
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "endpoint": "https://opencode.ai/zen/v1/models",
-      "live_count": 82,
+      "live_count": 84,
       "count": 0
     },
     {
       "key": "opencode-go",
       "label": "OpenCode Go",
       "endpoint": "https://opencode.ai/zen/go/v1/models",
-      "live_count": 31,
+      "live_count": 30,
       "count": 0
     },
     {
       "key": "nous-portal",
       "label": "Nous Portal",
       "endpoint": "https://inference-api.nousresearch.com/v1/models",
-      "live_count": 394,
-      "count": 1
+      "live_count": 396,
+      "count": 0
     },
     {
       "key": "commandcode",
       "label": "Command Code",
       "endpoint": "https://api.commandcode.ai/provider/v1/models",
-      "live_count": 96,
+      "live_count": 97,
       "count": 2
     }
   ],
@@ -76,38 +76,6 @@
       "reasoning": false,
       "tool_call": false,
       "url": "https://commandcode.ai/models"
-    },
-    {
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
-      "provider_key": "nous-portal",
-      "provider": "Nous Portal",
-      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
-      "context_length": 1048576,
-      "price": {
-        "prompt": 0,
-        "completion": 0
-      },
-      "endpoints": [],
-      "reasoning": true,
-      "tool_call": true,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
-      "provider_key": "openrouter",
-      "provider": "OpenRouter",
-      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
-      "context_length": 1048576,
-      "price": {
-        "prompt": 0,
-        "completion": 0
-      },
-      "endpoints": [],
-      "reasoning": true,
-      "tool_call": true,
-      "url": "https://openrouter.ai/stealth/crouton-alpha"
     }
   ]
 }

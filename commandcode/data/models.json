@@ -1,28 +1,10 @@
 {
-  "generated_at": "2026-11-09T14:53:15.775Z",
+  "generated_at": "2026-11-10T14:06:21.224Z",
   "source": "https://api.commandcode.ai/provider/v1/models",
   "catalog": "https://commandcode.ai/models",
-  "total_models": 96,
-  "count": 2,
+  "total_models": 97,
+  "count": 1,
   "models": [
-    {
-      "id": "reflection/beam:free",
-      "name": "Beam 1.0",
-      "provider": "Command Code",
-      "note": "Free while it lasts.",
-      "deal_url": "https://commandcode.ai/models",
-      "context_length": 1048576,
-      "created": 1794235995,
-      "endpoints": [
-        "/chat/completions",
-        "/responses"
-      ],
-      "endpoint_labels": [
-        "Chat Completions",
-        "Responses"
-      ],
-      "url": "https://commandcode.ai/models"
-    },
     {
       "id": "stealth/glyph-cluster:free",
       "name": "Glyph Cluster",
@@ -30,7 +12,7 @@
       "note": "Stealth preview — free while the preview lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
       "context_length": 256000,
-      "created": 1794235995,
+      "created": 1794319581,
       "endpoints": [
         "/chat/completions",
         "/responses"
