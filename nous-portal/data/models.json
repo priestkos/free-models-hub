@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-10T14:06:21.007Z",
+  "generated_at": "2026-11-11T13:23:03.368Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 396,
-  "count": 4,
+  "total_models": 394,
+  "count": 3,
   "models": [
     {
       "id": "meituan/longcat-2.5:free",
@@ -29,31 +29,6 @@
       "reasoning": false,
       "tool_call": true,
       "supported_parameters": 12,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
-      "id": "reflection/beam-1.0-501b-a23b:free",
-      "name": "Reflection: Beam 1.0 501B A23B",
-      "provider": "Reflection",
-      "model": "Beam 1.0 501B A23B",
-      "description": "Beam 1.0 is a free reasoning model with a 262K-token context window, tool calling and structured outputs. Text input only. Reasoning is always on; control depth with the `reasoning` parameter (`low` / `medium` / `high` / `xhigh` / `max`).",
-      "context_length": 262144,
-      "max_completion_tokens": 131072,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1792108800,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "reflection/beam-1.0-501b-a23b:free",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 8,
       "url": "https://portal.nousresearch.com"
     },
     {

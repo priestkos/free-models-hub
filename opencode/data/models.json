@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T14:06:20.701Z",
+  "generated_at": "2026-11-11T13:23:03.080Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -14,8 +14,8 @@
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 137,
-      "live_count": 84,
+      "catalog_size": 138,
+      "live_count": 85,
       "count": 12,
       "models": [
         {
@@ -64,7 +64,7 @@
           "id": "deepseek-v4.1-flash-free",
           "config_id": "opencode/deepseek-v4.1-flash-free",
           "name": "DeepSeek V4.1 Flash Free",
-          "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+          "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
           "context": 200000,
           "max_output": 32000,
           "input_modalities": [
@@ -78,9 +78,9 @@
           "tool_call": true,
           "attachment": true,
           "open_weights": true,
-          "release_date": "2026-09-10",
-          "last_updated": "2026-09-10",
-          "canonical_model_id": "deepseek/deepseek-v4.1-flash"
+          "release_date": "2026-10-17",
+          "last_updated": "2026-10-17",
+          "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017"
         },
         {
           "id": "flint-40b-free",
