@@ -22,11 +22,8 @@ const modelsOf = (d) => (Array.isArray(d.providers) ? d.providers.flatMap((p) =>
 const clean = (name) => String(name || "").replace(/^[^:]+:\s*/, "").trim();
 
 function fmtDate(iso) {
-  try {
-    return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return iso;
-  }
+  const d = new Date(iso);  // an invalid date does not throw, it formats as "Invalid Date"
+  return isNaN(d) ? "—" : d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 }
 
 async function loadSite(path) {

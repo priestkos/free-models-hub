@@ -23,6 +23,17 @@ function run(file, { fetch = () => new Promise(() => {}), query = () => el() } =
   return { ctx, els };
 }
 
+const APPS = ["openrouter", "opencode", "nous-portal", "commandcode", "stealth"].map((s) => `${s}/assets/app.js`);
+
+test("fmtDate shows a dash, not 'Invalid Date', for bad or missing dates", () => {
+  for (const file of [...APPS, "assets/hub.js"]) {
+    const { ctx } = run(file);
+    assert.equal(ctx.fmtDate("not a date"), "—", file);
+    assert.equal(ctx.fmtDate("2026-11-11T13:23:03.607Z"), "Nov 11, 2026", file);
+  }
+  assert.equal(run("assets/hub.js").ctx.fmtDate(undefined), "—");
+});
+
 test("hub: a missing site card does not stop the totals", async () => {
   const data = (path) => JSON.parse(read(path.replace(/^\//, "")));
   const { els } = run("assets/hub.js", {
