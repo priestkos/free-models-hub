@@ -72,3 +72,10 @@ test("a catalog with no free models left is refused where that means a pricing c
   // Command Code and Stealth lists are small previews that can legitimately run dry.
   assert.equal(commandcode({ data: [{ id: "p/x" }] }).count, 0);
 });
+
+test("stealth reasoning flag: object flags decide, booleans pass through", () => {
+  const byId = Object.fromEntries(stealth(stealthBodies()).models.map((m) => [m.id, m]));
+  assert.equal(byId["stealth/ghost"].reasoning, false);  // {default_enabled:false, mandatory:false}
+  assert.equal(byId["stealth/glyph-cluster:free"].reasoning, true);  // reasoning: true
+  assert.equal(byId["stealth/go-ghost"].reasoning, false);  // absent
+});

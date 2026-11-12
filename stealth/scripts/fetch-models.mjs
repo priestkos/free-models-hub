@@ -84,7 +84,7 @@ function shape(p, m) {
     // Price per token in USD as reported by the provider; null = not reported.
     price: prompt === null && completion === null ? null : { prompt, completion },
     endpoints,
-    reasoning: !!(m.reasoning && (m.reasoning.default_enabled || m.reasoning.mandatory)) || !!m.reasoning,
+    reasoning: typeof m.reasoning === "boolean" ? m.reasoning : !!(m.reasoning && (m.reasoning.default_enabled || m.reasoning.mandatory)),
     tool_call: params.includes("tools") || !!m.tool_call,
     url: p.url(m.id),
   };
