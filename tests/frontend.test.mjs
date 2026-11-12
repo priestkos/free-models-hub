@@ -53,3 +53,14 @@ test("hub: index.html has a card for every catalog hub.js reads", () => {
     assert.ok(html.includes(`data-site="${path}"`), path);
   }
 });
+
+test("hub countOf/modelsOf read both the models and the providers shapes", () => {
+  const { ctx } = run("assets/hub.js");
+  const countOf = vm.runInContext("countOf", ctx), modelsOf = vm.runInContext("modelsOf", ctx);
+  const byProvider = { total_free: 99, providers: [{ count: 2, models: [{ id: "a" }, { id: "b" }] }, { count: 1, models: [{ id: "c" }] }] };
+  assert.equal(countOf(byProvider), 3);
+  assert.deepEqual(modelsOf(byProvider).map((m) => m.id), ["a", "b", "c"]);
+  assert.equal(countOf({ count: 4, models: [] }), 4);
+  assert.equal(countOf({ models: [{ id: "a" }] }), 1);
+  assert.deepEqual(modelsOf({ models: [{ id: "a" }] }).map((m) => m.id), ["a"]);
+});

@@ -35,6 +35,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Test generators and pages (fixtures, no network)
+        run: node --test tests/
+
       # One provider being down must not block the deploy: a failing script
       # writes nothing, so its last good models.json is kept and published.
       - name: Refresh all four catalogs and the Stealth catalog
