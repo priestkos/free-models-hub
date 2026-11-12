@@ -35,13 +35,13 @@ jobs:
         with:
           node-version: "20"
 
+      # One provider being down must not block the deploy: a failing script
+      # writes nothing, so its last good models.json is kept and published.
       - name: Refresh all four catalogs and the Stealth catalog
         run: |
-          node openrouter/scripts/fetch-models.mjs
-          node opencode/scripts/fetch-models.mjs
-          node nous-portal/scripts/fetch-models.mjs
-          node commandcode/scripts/fetch-models.mjs
-          node stealth/scripts/fetch-models.mjs
+          for s in openrouter opencode nous-portal commandcode stealth; do
+            node "$s/scripts/fetch-models.mjs" || echo "::warning::$s refresh failed; keeping its last good catalog"
+          done
 
       - name: Commit refreshed data
         run: |
