@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T13:23:03.938Z",
+  "generated_at": "2026-11-12T10:06:52.924Z",
   "sources": [
     "https://openrouter.ai/api/v1/models",
     "https://opencode.ai/zen/v1/models",
@@ -13,7 +13,7 @@
       "key": "openrouter",
       "label": "OpenRouter",
       "endpoint": "https://openrouter.ai/api/v1/models",
-      "live_count": 466,
+      "live_count": 468,
       "count": 0
     },
     {
@@ -34,7 +34,7 @@
       "key": "nous-portal",
       "label": "Nous Portal",
       "endpoint": "https://inference-api.nousresearch.com/v1/models",
-      "live_count": 394,
+      "live_count": 395,
       "count": 0
     },
     {
