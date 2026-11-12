@@ -53,7 +53,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- '*/data/models.json'
           git commit -m "chore: refresh free-model catalogs and Stealth [skip ci]"
-          git push origin HEAD:main
+          # main may have moved since checkout (queued runs): rebase the data commit
+          # onto it; if that still fails, deploy this run's data without pushing.
+          if ! { git pull --rebase -q origin main && git push -q origin HEAD:main; }; then
+            git rebase --abort 2>/dev/null || true
+            echo "::warning::could not push the refreshed data; deploying it anyway"
+          fi
 
       - name: Assemble site
         run: |
