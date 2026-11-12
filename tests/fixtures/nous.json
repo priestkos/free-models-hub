@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "id": "nous/hermes-free",
+      "name": "Nous: Hermes Free",
+      "pricing": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "reasoning": {
+        "default_enabled": true
+      },
+      "supported_parameters": [
+        "tools",
+        "temperature"
+      ]
+    },
+    {
+      "id": "nous/hermes-paid",
+      "name": "Nous: Hermes Paid",
+      "pricing": {
+        "prompt": "0.000001",
+        "completion": "0.000002"
+      }
+    }
+  ]
+}

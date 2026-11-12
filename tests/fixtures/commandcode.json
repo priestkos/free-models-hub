@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": "x/a:free",
+      "name": "A Free",
+      "supported_endpoints": [
+        "/chat/completions",
+        "/custom"
+      ]
+    },
+    {
+      "id": "poolside/laguna-s-2.1-free",
+      "name": "Laguna"
+    },
+    {
+      "id": "y/freebie",
+      "name": "Freebie"
+    },
+    {
+      "id": "z/freedom",
+      "name": "Freedom"
+    },
+    {
+      "id": "stealth/glyph-cluster:free",
+      "name": "Glyph Cluster",
+      "reasoning": true
+    }
+  ]
+}

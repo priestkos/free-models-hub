@@ -16,10 +16,7 @@ const num = (x) => {
   return Number.isFinite(n) ? n : null;
 };
 
-async function main() {
-  const res = await fetch(API, { headers: { Accept: "application/json" } });
-  if (!res.ok) throw new Error(`Nous API responded ${res.status} ${res.statusText}`);
-  const body = await res.json();
+export function build(body) {
   const all = Array.isArray(body.data) ? body.data : [];
 
   const models = all
@@ -64,13 +61,23 @@ async function main() {
     count: models.length,
     models,
   };
+  return out;
+}
+
+async function main() {
+  const res = await fetch(API, { headers: { Accept: "application/json" } });
+  if (!res.ok) throw new Error(`Nous API responded ${res.status} ${res.statusText}`);
+  const out = build(await res.json());
 
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
-  console.log(`Wrote ${models.length} free models (of ${all.length}) -> ${OUT}`);
+  console.log(`Wrote ${out.count} free models (of ${out.total_models}) -> ${OUT}`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Run only as a script, so the tests can import build() without fetching.
+if (resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

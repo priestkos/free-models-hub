@@ -1,0 +1,27 @@
+{
+  "opencode": {
+    "doc": "https://opencode.ai/docs/zen",
+    "models": {
+      "zero": {
+        "id": "zero",
+        "name": "Zero",
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "reasoning": true
+      },
+      "paid": {
+        "id": "paid",
+        "name": "Paid",
+        "cost": {
+          "input": 1,
+          "output": 2
+        }
+      }
+    }
+  },
+  "opencode-go": {
+    "models": {}
+  }
+}

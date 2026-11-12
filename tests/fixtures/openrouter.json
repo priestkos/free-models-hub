@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "id": "a/free-one:free",
+      "name": "A: Free One",
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "context_length": 8192,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ]
+      },
+      "supported_parameters": [
+        "tools"
+      ]
+    },
+    {
+      "id": "b/cheap",
+      "name": "B: Cheap",
+      "pricing": {
+        "prompt": "0.0001",
+        "completion": "0"
+      }
+    },
+    {
+      "id": "openrouter/free",
+      "name": "Free Models Router",
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      }
+    },
+    {
+      "id": "c/nopricing",
+      "name": "C: No Pricing"
+    },
+    {
+      "id": "stealth/ghost",
+      "name": "Stealth Ghost",
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "reasoning": {
+        "default_enabled": false,
+        "mandatory": false
+      }
+    }
+  ]
+}

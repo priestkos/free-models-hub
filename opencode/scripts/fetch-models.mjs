@@ -82,12 +82,8 @@ async function getJSON(url) {
   return res.json();
 }
 
-async function main() {
-  const [dev, ...gateways] = await Promise.all([
-    getJSON(DEV_URL),
-    ...PROVIDERS.map((p) => getJSON(p.gateway)),
-  ]);
-
+// dev: the models.dev catalog; gateways: one /models body per PROVIDERS entry.
+export function build(dev, gateways) {
   const providers = PROVIDERS.map(({ key, label, gateway }, i) => {
     const liveIds = new Set((gateways[i].data || []).map((m) => m.id));
     const meta = dev[key] || {};
@@ -121,6 +117,16 @@ async function main() {
     total_free: providers.reduce((n, p) => n + p.count, 0),
     providers,
   };
+  return out;
+}
+
+async function main() {
+  const [dev, ...gateways] = await Promise.all([
+    getJSON(DEV_URL),
+    ...PROVIDERS.map((p) => getJSON(p.gateway)),
+  ]);
+  const out = build(dev, gateways);
+  const { providers } = out;
 
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
@@ -130,7 +136,10 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Run only as a script, so the tests can import build() without fetching.
+if (resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

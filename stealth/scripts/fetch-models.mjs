@@ -87,9 +87,8 @@ async function getJSON(url) {
   return res.json();
 }
 
-async function main() {
-  const bodies = await Promise.all(PROVIDERS.map((p) => getJSON(p.endpoint)));
-
+// bodies: one /models response body per PROVIDERS entry, in order.
+export function build(bodies) {
   const models = [];
   const providers = PROVIDERS.map((p, i) => {
     const all = Array.isArray(bodies[i].data) ? bodies[i].data : [];
@@ -113,6 +112,12 @@ async function main() {
     providers,
     models,
   };
+  return out;
+}
+
+async function main() {
+  const out = build(await Promise.all(PROVIDERS.map((p) => getJSON(p.endpoint))));
+  const { models, providers } = out;
 
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
@@ -122,7 +127,10 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Run only as a script, so the tests can import build() without fetching.
+if (resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
