@@ -27,6 +27,15 @@ const num = (x) => {
   return Number.isFinite(n) ? n : null;
 };
 
+// Refuse an empty or reshaped response, so a bad 200 never replaces the last good catalog.
+function dataOf(body, what) {
+  const list = body && body.data;
+  if (!Array.isArray(list) || !list.length || !list.every((m) => m && typeof m.id === "string")) {
+    throw new Error(`${what}: expected a non-empty data[] of models with string ids`);
+  }
+  return list;
+}
+
 const isZeroCost = (m) => {
   const c = m.cost || {};
   return num(c.input) === 0 && num(c.output) === 0;
@@ -84,8 +93,11 @@ async function getJSON(url) {
 
 // dev: the models.dev catalog; gateways: one /models body per PROVIDERS entry.
 export function build(dev, gateways) {
+  if (!PROVIDERS.some((p) => dev && dev[p.key] && dev[p.key].models)) {
+    throw new Error("models.dev: no OpenCode provider catalogs found (shape changed?)");
+  }
   const providers = PROVIDERS.map(({ key, label, gateway }, i) => {
-    const liveIds = new Set((gateways[i].data || []).map((m) => m.id));
+    const liveIds = new Set(dataOf(gateways[i], label).map((m) => m.id));
     const meta = dev[key] || {};
     const catalog = meta.models || {};
     const models = [];
@@ -110,6 +122,8 @@ export function build(dev, gateways) {
       models,
     };
   });
+
+  if (!providers.some((p) => p.count)) throw new Error("OpenCode: no free models found, refusing to publish an empty catalog");
 
   const out = {
     generated_at: new Date().toISOString(),

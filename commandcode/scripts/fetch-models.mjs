@@ -26,6 +26,15 @@ const NOTES = {
 
 const isFree = (id) => /(^|[-/:])free$/i.test(id);
 
+// Refuse an empty or reshaped response, so a bad 200 never replaces the last good catalog.
+function dataOf(body, what) {
+  const list = body && body.data;
+  if (!Array.isArray(list) || !list.length || !list.every((m) => m && typeof m.id === "string")) {
+    throw new Error(`${what}: expected a non-empty data[] of models with string ids`);
+  }
+  return list;
+}
+
 const ENDPOINT_LABEL = {
   "/chat/completions": "Chat Completions",
   "/responses": "Responses",
@@ -34,7 +43,7 @@ const ENDPOINT_LABEL = {
 };
 
 export function build(body) {
-  const all = Array.isArray(body.data) ? body.data : [];
+  const all = dataOf(body, "Command Code");  // zero free models is allowed: the list is a small, changing preview
 
   const models = all
     .filter((m) => isFree(m.id))

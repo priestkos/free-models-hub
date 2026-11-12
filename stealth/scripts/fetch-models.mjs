@@ -56,6 +56,15 @@ const num = (x) => {
   return Number.isFinite(n) ? n : null;
 };
 
+// Refuse an empty or reshaped response, so a bad 200 never replaces the last good catalog.
+function dataOf(body, what) {
+  const list = body && body.data;
+  if (!Array.isArray(list) || !list.length || !list.every((m) => m && typeof m.id === "string")) {
+    throw new Error(`${what}: expected a non-empty data[] of models with string ids`);
+  }
+  return list;
+}
+
 const isStealth = (m) => /^stealth\//i.test(m.id || "") || /^stealth\b/i.test(m.name || "");
 
 // Each API reports a different shape; normalise to one record.
@@ -91,7 +100,7 @@ async function getJSON(url) {
 export function build(bodies) {
   const models = [];
   const providers = PROVIDERS.map((p, i) => {
-    const all = Array.isArray(bodies[i].data) ? bodies[i].data : [];
+    const all = dataOf(bodies[i], p.label);
     const found = all.filter(isStealth).map((m) => shape(p, m));
     models.push(...found);
     return {

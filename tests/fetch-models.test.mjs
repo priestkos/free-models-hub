@@ -46,3 +46,29 @@ test("stealth collects stealth/ models from every provider", () => {
   assert.deepEqual(ids(out), ["stealth/ghost", "stealth/glyph-cluster:free", "stealth/go-ghost"]);
   assert.deepEqual(out.providers.map((p) => p.count), [1, 0, 1, 0, 1]);
 });
+
+const BAD = { "no data": {}, "empty data": { data: [] }, "renamed key": { models: [{ id: "a" }] },
+  "items without id": { data: [{ name: "a" }] } };
+
+test("empty or shape-changed responses throw instead of writing", () => {
+  for (const [why, body] of Object.entries(BAD)) {
+    assert.throws(() => openrouter(body), /non-empty data/, `openrouter: ${why}`);
+    assert.throws(() => nous(body), /non-empty data/, `nous: ${why}`);
+    assert.throws(() => commandcode(body), /non-empty data/, `commandcode: ${why}`);
+    assert.throws(() => opencode(fx("modelsdev"), [body, fx("opencode-go")]), /non-empty data/, `opencode: ${why}`);
+    const bodies = stealthBodies();
+    bodies[2] = body;
+    assert.throws(() => stealth(bodies), /non-empty data/, `stealth: ${why}`);
+  }
+  assert.throws(() => opencode({}, [fx("opencode-zen"), fx("opencode-go")]), /models\.dev/);
+});
+
+test("a catalog with no free models left is refused where that means a pricing change", () => {
+  const paid = { data: [{ id: "p/x", pricing: { prompt: "1", completion: "1" } }] };
+  assert.throws(() => openrouter(paid), /no free models/);
+  assert.throws(() => nous(paid), /no free models/);
+  const dev = { opencode: { models: { x: { id: "x", cost: { input: 1, output: 1 } } } }, "opencode-go": { models: { x: { id: "x", cost: { input: 1, output: 1 } } } } };
+  assert.throws(() => opencode(dev, [{ data: [{ id: "x" }] }, { data: [{ id: "x" }] }]), /no free models/);
+  // Command Code and Stealth lists are small previews that can legitimately run dry.
+  assert.equal(commandcode({ data: [{ id: "p/x" }] }).count, 0);
+});

@@ -16,8 +16,17 @@ const num = (x) => {
   return Number.isFinite(n) ? n : null;
 };
 
+// Refuse an empty or reshaped response, so a bad 200 never replaces the last good catalog.
+function dataOf(body, what) {
+  const list = body && body.data;
+  if (!Array.isArray(list) || !list.length || !list.every((m) => m && typeof m.id === "string")) {
+    throw new Error(`${what}: expected a non-empty data[] of models with string ids`);
+  }
+  return list;
+}
+
 export function build(body) {
-  const all = Array.isArray(body.data) ? body.data : [];
+  const all = dataOf(body, "Nous");
 
   const models = all
     .filter((m) => {
@@ -52,6 +61,7 @@ export function build(body) {
       };
     })
     .sort((a, b) => a.name.localeCompare(b.name));
+  if (!models.length) throw new Error("Nous: no free models found, refusing to publish an empty catalog");
 
   const out = {
     generated_at: new Date().toISOString(),
