@@ -45,6 +45,7 @@ async function init() {
   results.forEach((r, i) => {
     const { path, label } = SITES[i];
     const card = document.querySelector(`.site-card[data-site="${path}"]`);
+    if (!card) return;  // a removed card must not stop the totals below
     const countEl = card.querySelector("[data-count]");
     const previewEl = card.querySelector("[data-preview]");
 
