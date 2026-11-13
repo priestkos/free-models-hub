@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-12T14:27:26.765Z",
+  "generated_at": "2026-11-13T13:45:22.739Z",
   "source": "https://api.commandcode.ai/provider/v1/models",
   "catalog": "https://commandcode.ai/models",
-  "total_models": 97,
-  "count": 1,
+  "total_models": 98,
+  "count": 2,
   "models": [
     {
       "id": "stealth/glyph-cluster:free",
@@ -12,7 +12,7 @@
       "note": "Stealth preview — free while the preview lasts.",
       "deal_url": "https://commandcode.ai/docs/resources/pricing-limits#glyph-cluster-free",
       "context_length": 256000,
-      "created": 1794493646,
+      "created": 1794577522,
       "endpoints": [
         "/chat/completions",
         "/responses"
@@ -20,6 +20,22 @@
       "endpoint_labels": [
         "Chat Completions",
         "Responses"
+      ],
+      "url": "https://commandcode.ai/models"
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small:free",
+      "name": "Inkling 2 Small",
+      "provider": "Command Code",
+      "note": "Free while it lasts.",
+      "deal_url": "https://commandcode.ai/models",
+      "context_length": 1048576,
+      "created": 1794577522,
+      "endpoints": [
+        "/chat/completions"
+      ],
+      "endpoint_labels": [
+        "Chat Completions"
       ],
       "url": "https://commandcode.ai/models"
     }

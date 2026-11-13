@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T14:27:25.790Z",
+  "generated_at": "2026-11-13T13:45:21.809Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 468,
+  "total_models": 470,
   "count": 16,
   "models": [
     {
@@ -199,29 +199,6 @@
       "url": "https://openrouter.ai/google/lyria-3-pro-preview"
     },
     {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "provider": "LiquidAI",
-      "model": "LFM2.5-2.6B (free)",
-      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "context_length": 65536,
-      "max_completion_tokens": 8192,
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1786470519,
-      "expiration_date": "2026-11-13",
-      "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
-      "supported_parameters": 19,
-      "is_router": false,
-      "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free"
-    },
-    {
       "id": "liquid/lfm-3-1.7b:free",
       "name": "LiquidAI: LFM3-1.7B (free)",
       "provider": "LiquidAI",
@@ -342,6 +319,30 @@
       "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free"
     },
     {
+      "id": "particle-ai/particle-1:free",
+      "name": "Particle AI: Particle-1 (free)",
+      "provider": "Particle AI",
+      "model": "Particle-1 (free)",
+      "description": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suited for software engineering work such as terminal workflows, codebase changes, and data...",
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1793207893,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "supported_parameters": 19,
+      "is_router": false,
+      "url": "https://openrouter.ai/particle-ai/particle-1:free"
+    },
+    {
       "id": "recursive/flint-v1.0:free",
       "name": "Recursive: Flint (free)",
       "provider": "Recursive",
@@ -369,7 +370,7 @@
       "name": "Thinking Machines: Inkling 2 Small (free)",
       "provider": "Thinking Machines",
       "model": "Inkling 2 Small (free)",
-      "description": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second Inkling...",
+      "description": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second...",
       "context_length": 1048576,
       "max_completion_tokens": 131072,
       "modality": "text+image->text",
@@ -383,7 +384,7 @@
       "knowledge_cutoff": null,
       "created": 1794261847,
       "expiration_date": null,
-      "hugging_face_id": null,
+      "hugging_face_id": "thinkingmachines/Inkling-2-Small",
       "supported_parameters": 9,
       "is_router": false,
       "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free"
