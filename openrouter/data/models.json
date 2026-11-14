@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-13T13:45:21.809Z",
+  "generated_at": "2026-11-14T12:50:14.086Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 470,
-  "count": 16,
+  "total_models": 471,
+  "count": 17,
   "models": [
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
@@ -197,6 +197,30 @@
       "supported_parameters": 5,
       "is_router": false,
       "url": "https://openrouter.ai/google/lyria-3-pro-preview"
+    },
+    {
+      "id": "inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "provider": "inclusionAI",
+      "model": "Ling 3.2 Flash (free)",
+      "description": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and up to 200 images per request. Thinking can...",
+      "context_length": 1048576,
+      "max_completion_tokens": 262144,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1794591958,
+      "expiration_date": null,
+      "hugging_face_id": "inclusionAI/Ling-3.2-flash",
+      "supported_parameters": 14,
+      "is_router": false,
+      "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free"
     },
     {
       "id": "liquid/lfm-3-1.7b:free",
