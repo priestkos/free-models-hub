@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T12:50:14.626Z",
+  "generated_at": "2026-11-15T13:16:24.554Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -164,9 +164,9 @@
           "reasoning": true,
           "tool_call": true,
           "attachment": true,
-          "open_weights": false,
+          "open_weights": true,
           "release_date": "2026-11-05",
-          "last_updated": "2026-11-05",
+          "last_updated": "2026-11-12",
           "canonical_model_id": "thinkingmachines/inkling-2-small"
         },
         {
