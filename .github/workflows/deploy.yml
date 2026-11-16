@@ -3,8 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # Daily refresh of all four catalogs, run entirely on GitHub-hosted runners
-  # (no local scheduler).
+  # Daily refresh of the four catalogs and the Stealth catalog, run entirely
+  # on GitHub-hosted runners (no local scheduler).
   schedule:
     - cron: "0 6 * * *"
   # On-demand trigger: Actions tab -> "Run workflow", or
