@@ -71,7 +71,7 @@ A boolean `reasoning` is stored as-is. An object is `true` only when `default_en
 A generator throws, and therefore skips the write, when:
 
 - The HTTP status is not OK.
-- The body is missing `data`, `data` is empty, or an entry lacks a string `id`. OpenCode also throws when `models.dev` has no `opencode` or `opencode-go` model map.
+- The body is missing `data`, `data` is empty, or an entry lacks a string `id`. OpenCode also throws when `models.dev` has a `models` map for neither `opencode` nor `opencode-go`.
 - OpenRouter, Nous, or OpenCode would publish zero free models. That empty result is treated as a pricing or filter change. Command Code may publish zero. Stealth may publish zero Stealth models. One bad provider body fails the whole Stealth script, so a partial Stealth list is never written.
 
 Trigger a run from the Actions tab, or:
