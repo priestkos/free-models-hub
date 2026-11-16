@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:16:24.554Z",
+  "generated_at": "2026-11-16T14:29:30.263Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,16 +7,16 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 15,
+  "total_free": 17,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 139,
-      "live_count": 86,
-      "count": 12,
+      "catalog_size": 140,
+      "live_count": 87,
+      "count": 13,
       "models": [
         {
           "id": "beam-free",
@@ -125,6 +125,28 @@
           "release_date": "2026-08-26",
           "last_updated": "2026-08-26",
           "canonical_model_id": "zhipuai/glm-5.3-flash"
+        },
+        {
+          "id": "hy4-flash-free",
+          "config_id": "opencode/hy4-flash-free",
+          "name": "Hy4 flash Free",
+          "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
+          "context": 1048576,
+          "max_output": 65536,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": false,
+          "release_date": "2026-11-16",
+          "last_updated": "2026-11-16",
+          "canonical_model_id": "tencent/hy4-flash"
         },
         {
           "id": "iceman-free",
@@ -288,9 +310,9 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 40,
-      "live_count": 30,
-      "count": 3,
+      "catalog_size": 42,
+      "live_count": 32,
+      "count": 4,
       "models": [
         {
           "id": "beam-free",
@@ -312,6 +334,28 @@
           "release_date": "2026-10-05",
           "last_updated": "2026-10-16",
           "canonical_model_id": "reflection/beam-1.0-501b-a23b"
+        },
+        {
+          "id": "hy4-flash-free",
+          "config_id": "opencode-go/hy4-flash-free",
+          "name": "Hy4 flash Free",
+          "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
+          "context": 1048576,
+          "max_output": 65536,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": false,
+          "release_date": "2026-11-16",
+          "last_updated": "2026-11-16",
+          "canonical_model_id": "tencent/hy4-flash"
         },
         {
           "id": "iceman-contributor-free",
