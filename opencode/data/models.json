@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T14:29:30.263Z",
+  "generated_at": "2026-11-17T15:20:51.287Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 17,
+  "total_free": 16,
   "providers": [
     {
       "key": "opencode",
@@ -15,8 +15,8 @@
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
       "catalog_size": 140,
-      "live_count": 87,
-      "count": 13,
+      "live_count": 86,
+      "count": 12,
       "models": [
         {
           "id": "beam-free",
@@ -236,29 +236,6 @@
           "release_date": "2026-09-22",
           "last_updated": "2026-09-22",
           "canonical_model_id": "xiaomi/mimo-v2.6-flash"
-        },
-        {
-          "id": "minimax-m3.1-flash-free",
-          "config_id": "opencode/minimax-m3.1-flash-free",
-          "name": "MiniMax M3.1 Flash Free",
-          "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
-          "context": 1000000,
-          "max_output": 512000,
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": true,
-          "release_date": "2026-10-19",
-          "last_updated": "2026-10-19",
-          "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
         },
         {
           "id": "nemotron-3.5-lightning-free",

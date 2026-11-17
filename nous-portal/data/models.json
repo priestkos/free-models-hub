@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-16T14:29:30.508Z",
+  "generated_at": "2026-11-17T15:20:51.603Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 399,
-  "count": 3,
+  "total_models": 402,
+  "count": 4,
   "models": [
     {
       "id": "meituan/longcat-2.5:free",
@@ -56,6 +56,32 @@
       "reasoning": true,
       "tool_call": true,
       "supported_parameters": 18,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "tencent/hy4-flash:free",
+      "name": "Tencent: Hy4 flash",
+      "provider": "Tencent",
+      "model": "Hy4 flash",
+      "description": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a quarter of the flagship's parameter count for lower latency and cost. It targets code assistance, agent...",
+      "context_length": 1048576,
+      "max_completion_tokens": 65536,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1794838706,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "tencent/hy4-flash-20261116",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 10,
       "url": "https://portal.nousresearch.com"
     },
     {
