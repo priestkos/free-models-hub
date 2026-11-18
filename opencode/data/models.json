@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T15:20:51.287Z",
+  "generated_at": "2026-11-18T14:55:28.903Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,16 +7,16 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 16,
+  "total_free": 15,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 140,
-      "live_count": 86,
-      "count": 12,
+      "catalog_size": 142,
+      "live_count": 87,
+      "count": 11,
       "models": [
         {
           "id": "beam-free",
@@ -102,29 +102,6 @@
           "release_date": "2026-10-21",
           "last_updated": "2026-10-21",
           "canonical_model_id": "recursive/flint"
-        },
-        {
-          "id": "glm-5.3-flash-free",
-          "config_id": "opencode/glm-5.3-flash-free",
-          "name": "GLM-5.3-Flash Free",
-          "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-          "context": 200000,
-          "max_output": 32000,
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": true,
-          "release_date": "2026-08-26",
-          "last_updated": "2026-08-26",
-          "canonical_model_id": "zhipuai/glm-5.3-flash"
         },
         {
           "id": "hy4-flash-free",

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T15:20:51.603Z",
+  "generated_at": "2026-11-18T14:55:29.143Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 402,
+  "total_models": 410,
   "count": 4,
   "models": [
     {
@@ -77,7 +77,7 @@
       "knowledge_cutoff": null,
       "created": 1794838706,
       "expiration_date": null,
-      "hugging_face_id": null,
+      "hugging_face_id": "tencent/Hy4-flash",
       "canonical_slug": "tencent/hy4-flash-20261116",
       "reasoning": true,
       "tool_call": true,
