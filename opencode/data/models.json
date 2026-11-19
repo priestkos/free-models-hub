@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:55:28.903Z",
+  "generated_at": "2026-11-19T15:01:51.498Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,16 +7,16 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 15,
+  "total_free": 17,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 142,
-      "live_count": 87,
-      "count": 11,
+      "catalog_size": 144,
+      "live_count": 92,
+      "count": 13,
       "models": [
         {
           "id": "beam-free",
@@ -169,6 +169,23 @@
           "canonical_model_id": "thinkingmachines/inkling-2-small"
         },
         {
+          "id": "jev-1.13-free",
+          "config_id": "opencode/jev-1.13-free",
+          "name": "Jev 1.13 Free",
+          "description": "Returns structured decisions rather than free-form text, so it is not a replacement for a text-generating coding model.",
+          "context": null,
+          "max_output": null,
+          "input_modalities": [],
+          "output_modalities": [],
+          "reasoning": false,
+          "tool_call": false,
+          "attachment": false,
+          "open_weights": false,
+          "release_date": null,
+          "last_updated": null,
+          "canonical_model_id": null
+        },
+        {
           "id": "longcat-2.5-free",
           "config_id": "opencode/longcat-2.5-free",
           "name": "LongCat 2.5 Free",
@@ -256,6 +273,27 @@
           "release_date": "2026-10-15",
           "last_updated": "2026-10-15",
           "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b"
+        },
+        {
+          "id": "tidepool-alpha-free",
+          "config_id": "opencode/tidepool-alpha-free",
+          "name": "Tidepool Alpha Free",
+          "description": "Stealth reasoning model, free for a limited time",
+          "context": 1048576,
+          "max_output": 131072,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": false,
+          "open_weights": false,
+          "release_date": "2026-11-18",
+          "last_updated": "2026-11-18",
+          "canonical_model_id": null
         }
       ]
     },
@@ -265,7 +303,7 @@
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
       "catalog_size": 42,
-      "live_count": 32,
+      "live_count": 31,
       "count": 4,
       "models": [
         {

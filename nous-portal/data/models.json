@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-18T14:55:29.143Z",
+  "generated_at": "2026-11-19T15:01:51.760Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 410,
-  "count": 4,
+  "total_models": 413,
+  "count": 5,
   "models": [
     {
       "id": "meituan/longcat-2.5:free",
@@ -29,6 +29,33 @@
       "reasoning": false,
       "tool_call": true,
       "supported_parameters": 12,
+      "url": "https://portal.nousresearch.com"
+    },
+    {
+      "id": "qwen/qwen4-max:free",
+      "name": "Qwen: Qwen4 Max",
+      "provider": "Qwen",
+      "model": "Qwen4 Max",
+      "description": "Qwen4 Max is the flagship model in Alibaba's Qwen4 series. It accepts text, image, and video input and returns text, with a 1M-token context window and reasoning enabled by default....",
+      "context_length": 1000000,
+      "max_completion_tokens": 131072,
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1794795526,
+      "expiration_date": null,
+      "hugging_face_id": null,
+      "canonical_slug": "qwen/qwen4-max-20261115",
+      "reasoning": true,
+      "tool_call": true,
+      "supported_parameters": 17,
       "url": "https://portal.nousresearch.com"
     },
     {
