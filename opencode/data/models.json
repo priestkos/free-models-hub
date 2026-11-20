@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:01:51.498Z",
+  "generated_at": "2026-11-20T14:43:56.919Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,7 +7,7 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 17,
+  "total_free": 16,
   "providers": [
     {
       "key": "opencode",
@@ -15,8 +15,8 @@
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
       "catalog_size": 144,
-      "live_count": 92,
-      "count": 13,
+      "live_count": 103,
+      "count": 12,
       "models": [
         {
           "id": "beam-free",
@@ -145,28 +145,6 @@
           "release_date": "2026-11-06",
           "last_updated": "2026-11-06",
           "canonical_model_id": null
-        },
-        {
-          "id": "inkling-2-small-free",
-          "config_id": "opencode/inkling-2-small-free",
-          "name": "Inkling 2 Small Free",
-          "description": "Inkling 2 Small, free for a limited time",
-          "context": 1048576,
-          "max_output": 131072,
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "reasoning": true,
-          "tool_call": true,
-          "attachment": true,
-          "open_weights": true,
-          "release_date": "2026-11-05",
-          "last_updated": "2026-11-12",
-          "canonical_model_id": "thinkingmachines/inkling-2-small"
         },
         {
           "id": "jev-1.13-free",
