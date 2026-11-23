@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-22T13:53:56.884Z",
+  "generated_at": "2026-11-23T17:03:34.946Z",
   "source": "https://openrouter.ai/api/v1/models",
-  "total_models": 476,
-  "count": 14,
+  "total_models": 477,
+  "count": 15,
   "models": [
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
@@ -26,6 +26,30 @@
       "supported_parameters": 10,
       "is_router": false,
       "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free"
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "provider": "Dots Studio",
+      "model": "Dots3-Note Preview (free)",
+      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+      "context_length": 512000,
+      "max_completion_tokens": 460800,
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "knowledge_cutoff": null,
+      "created": 1786680361,
+      "expiration_date": "2026-12-31",
+      "hugging_face_id": "dots-studio/dots3-note-prev",
+      "supported_parameters": 9,
+      "is_router": false,
+      "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free"
     },
     {
       "id": "openrouter/free",

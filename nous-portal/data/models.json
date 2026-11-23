@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T13:53:57.597Z",
+  "generated_at": "2026-11-23T17:03:36.482Z",
   "source": "https://inference-api.nousresearch.com/v1/models",
   "portal": "https://portal.nousresearch.com",
-  "total_models": 415,
-  "count": 5,
+  "total_models": 411,
+  "count": 4,
   "models": [
     {
       "id": "meituan/longcat-2.5:free",
@@ -32,40 +32,13 @@
       "url": "https://portal.nousresearch.com"
     },
     {
-      "id": "qwen/qwen4-max:free",
-      "name": "Qwen: Qwen4 Max",
-      "provider": "Qwen",
-      "model": "Qwen4 Max",
-      "description": "Qwen4 Max is the flagship model in Alibaba's Qwen4 series. It accepts text, image, and video input and returns text, with a 1M-token context window and reasoning enabled by default....",
-      "context_length": 1000000,
-      "max_completion_tokens": 131072,
-      "modality": "text+image+video->text",
-      "input_modalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "knowledge_cutoff": null,
-      "created": 1794795526,
-      "expiration_date": null,
-      "hugging_face_id": null,
-      "canonical_slug": "qwen/qwen4-max-20261115",
-      "reasoning": true,
-      "tool_call": true,
-      "supported_parameters": 17,
-      "url": "https://portal.nousresearch.com"
-    },
-    {
       "id": "stepfun/step-3.7-flash:free",
-      "name": "StepFun: Step 3.7 Flash",
+      "name": "StepFun: Step 3.7 Flash (free)",
       "provider": "StepFun",
-      "model": "Step 3.7 Flash",
+      "model": "Step 3.7 Flash (free)",
       "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters...",
-      "context_length": 262144,
-      "max_completion_tokens": 256000,
+      "context_length": 256000,
+      "max_completion_tokens": 230400,
       "modality": "text+image+video->text",
       "input_modalities": [
         "text",
@@ -82,14 +55,14 @@
       "canonical_slug": "stepfun/step-3.7-flash-20260528",
       "reasoning": true,
       "tool_call": true,
-      "supported_parameters": 18,
+      "supported_parameters": 14,
       "url": "https://portal.nousresearch.com"
     },
     {
       "id": "tencent/hy4-flash:free",
-      "name": "Tencent: Hy4 flash",
+      "name": "Tencent: Hy4 flash (free)",
       "provider": "Tencent",
-      "model": "Hy4 flash",
+      "model": "Hy4 flash (free)",
       "description": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a quarter of the flagship's parameter count for lower latency and cost. It targets code assistance, agent...",
       "context_length": 1048576,
       "max_completion_tokens": 65536,
@@ -113,9 +86,9 @@
     },
     {
       "id": "upstage/solar-mini4:free",
-      "name": "Upstage: Solar Mini 4",
+      "name": "Upstage: Solar Mini 4 (free)",
       "provider": "Upstage",
-      "model": "Solar Mini 4",
+      "model": "Solar Mini 4 (free)",
       "description": "Solar Mini 4 is Upstage's compact, cost-efficient language model, a 35B-parameter mixture-of-experts with 3B active parameters and a 524K context window. It is built for agentic use cases where response...",
       "context_length": 524288,
       "max_completion_tokens": 131072,
