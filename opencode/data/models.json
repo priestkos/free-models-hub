@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T17:03:36.204Z",
+  "generated_at": "2026-11-24T16:50:19.683Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -7,15 +7,15 @@
     ],
     "metadata": "https://models.dev/api.json"
   },
-  "total_free": 14,
+  "total_free": 15,
   "providers": [
     {
       "key": "opencode",
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 145,
-      "live_count": 105,
+      "catalog_size": 146,
+      "live_count": 108,
       "count": 11,
       "models": [
         {
@@ -258,9 +258,9 @@
       "label": "OpenCode Go",
       "gateway": "https://opencode.ai/zen/go/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/go/",
-      "catalog_size": 43,
-      "live_count": 30,
-      "count": 3,
+      "catalog_size": 44,
+      "live_count": 37,
+      "count": 4,
       "models": [
         {
           "id": "beam-free",
@@ -282,6 +282,29 @@
           "release_date": "2026-10-05",
           "last_updated": "2026-10-16",
           "canonical_model_id": "reflection/beam-1.0-501b-a23b"
+        },
+        {
+          "id": "hungerg-free",
+          "config_id": "opencode-go/hungerg-free",
+          "name": "HungerG Free",
+          "description": "Stealth reasoning model, free for a limited time",
+          "context": 1000000,
+          "max_output": 65536,
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "reasoning": true,
+          "tool_call": true,
+          "attachment": true,
+          "open_weights": false,
+          "release_date": "2026-11-24",
+          "last_updated": "2026-11-24",
+          "canonical_model_id": null
         },
         {
           "id": "hy4-flash-free",
