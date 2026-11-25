@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T16:50:19.683Z",
+  "generated_at": "2026-11-25T16:37:59.254Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -120,7 +120,7 @@
           "reasoning": true,
           "tool_call": true,
           "attachment": true,
-          "open_weights": false,
+          "open_weights": true,
           "release_date": "2026-11-16",
           "last_updated": "2026-11-16",
           "canonical_model_id": "tencent/hy4-flash"
@@ -323,7 +323,7 @@
           "reasoning": true,
           "tool_call": true,
           "attachment": true,
-          "open_weights": false,
+          "open_weights": true,
           "release_date": "2026-11-16",
           "last_updated": "2026-11-16",
           "canonical_model_id": "tencent/hy4-flash"
