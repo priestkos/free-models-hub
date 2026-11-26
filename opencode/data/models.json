@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T16:37:59.254Z",
+  "generated_at": "2026-11-26T16:10:33.676Z",
   "sources": {
     "availability": [
       "https://opencode.ai/zen/v1/models",
@@ -14,7 +14,7 @@
       "label": "OpenCode Zen",
       "gateway": "https://opencode.ai/zen/v1/models",
       "doc": "https://opencode.ai/v2/docs/console/models/",
-      "catalog_size": 146,
+      "catalog_size": 147,
       "live_count": 108,
       "count": 11,
       "models": [
@@ -231,9 +231,9 @@
           "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b"
         },
         {
-          "id": "tidepool-alpha-free",
-          "config_id": "opencode/tidepool-alpha-free",
-          "name": "Tidepool Alpha Free",
+          "id": "seaglass-alpha-free",
+          "config_id": "opencode/seaglass-alpha-free",
+          "name": "Seaglass Alpha Free",
           "description": "Stealth reasoning model, free for a limited time",
           "context": 1048576,
           "max_output": 131072,
@@ -247,8 +247,8 @@
           "tool_call": true,
           "attachment": false,
           "open_weights": false,
-          "release_date": "2026-11-18",
-          "last_updated": "2026-11-18",
+          "release_date": "2026-11-26",
+          "last_updated": "2026-11-26",
           "canonical_model_id": null
         }
       ]
